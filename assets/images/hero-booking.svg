@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#0f172a"/>
+  <!-- Calendar grids outline -->
+  <rect x="250" y="80" width="300" height="240" rx="8" stroke="#334155" stroke-width="4" fill="none" opacity="0.3"/>
+  <line x1="250" y1="140" x2="550" y2="140" stroke="#334155" stroke-width="2" opacity="0.3"/>
+  <circle cx="300" cy="180" r="10" fill="#ff5722" opacity="0.4"/>
+  <circle cx="360" cy="180" r="10" fill="#5c3ab6" opacity="0.3"/>
+</svg>

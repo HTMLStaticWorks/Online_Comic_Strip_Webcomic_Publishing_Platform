@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#0c0e17"/>
+  <!-- Manga speed lines/rays from the center -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.3">
+    <line x1="400" y1="200" x2="0" y2="0"/>
+    <line x1="400" y1="200" x2="200" y2="0"/>
+    <line x1="400" y1="200" x2="400" y2="0"/>
+    <line x1="400" y1="200" x2="600" y2="0"/>
+    <line x1="400" y1="200" x2="800" y2="0"/>
+    <line x1="400" y1="200" x2="800" y2="100"/>
+    <line x1="400" y1="200" x2="800" y2="200"/>
+    <line x1="400" y1="200" x2="800" y2="300"/>
+    <line x1="400" y1="200" x2="800" y2="400"/>
+    <line x1="400" y1="200" x2="600" y2="400"/>
+    <line x1="400" y1="200" x2="400" y2="400"/>
+    <line x1="400" y1="200" x2="200" y2="400"/>
+    <line x1="400" y1="200" x2="0" y2="400"/>
+    <line x1="400" y1="200" x2="0" y2="300"/>
+    <line x1="400" y1="200" x2="0" y2="200"/>
+    <line x1="400" y1="200" x2="0" y2="100"/>
+  </g>
+  <!-- Overlapping dynamic comic speech shapes & action stars -->
+  <path d="M 400 130 L 420 160 L 460 150 L 440 180 L 470 210 L 430 210 L 410 240 L 390 210 L 350 220 L 370 190 L 340 160 L 380 160 Z" fill="#ff5722" opacity="0.3"/>
+  <circle cx="200" cy="100" r="15" fill="#5c3ab6" opacity="0.2"/>
+  <circle cx="620" cy="280" r="25" fill="#5c3ab6" opacity="0.2"/>
+  <circle cx="150" cy="300" r="8" fill="#ff5722" opacity="0.2"/>
+  <!-- Comic book dots overlay -->
+  <pattern id="comic-dots" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1.5" fill="#ff5722" opacity="0.15"/>
+  </pattern>
+  <rect width="800" height="400" fill="url(#comic-dots)"/>
+</svg>

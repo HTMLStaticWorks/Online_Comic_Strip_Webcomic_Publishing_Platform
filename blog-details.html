@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicVerse - Designing Panels for Mobile Viewports | Blog Details</title>
+    <meta name="description" content="Detailed guide on formatting comic panels for infinite vertical mobile scrolling viewports.">
+    <!-- Bootstrap 5 CSS -->
+    <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg header-navbar py-2">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home-1.html">
+                <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
+            </a>
+            
+            <button class="navbar-toggler border-0 ms-auto me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1 text-main"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="desktopNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <button class="control-btn" id="rtl-toggle" aria-label="Toggle Direction"><i class="bi bi-translate"></i></button>
+                    <button class="control-btn" id="theme-toggle" aria-label="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+                    <a href="login.html" class="btn-custom btn-outline-custom py-2 px-3">Login</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="mobileNavLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+            </ul>
+            <div class="d-flex flex-column gap-2 mt-4">
+                <div class="d-flex justify-content-center gap-2">
+                    <button class="control-btn" id="rtl-toggle-mobile" onclick="document.getElementById('rtl-toggle').click()"><i class="bi bi-translate"></i></button>
+                    <button class="control-btn" id="theme-toggle-mobile" onclick="document.getElementById('theme-toggle').click()"><i class="bi bi-moon-fill"></i></button>
+                </div>
+                <a href="login.html" class="btn-custom btn-outline-custom w-100">Login</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN SECTIONS (2-4 sections) -->
+
+    <!-- Section 1: Hero Section -->
+    <section class="hero-section mt-5 text-center" style="background-image: linear-gradient(180deg, rgba(15,23,42,0.85) 0%, rgba(92,58,182,0.85) 100%), url('assets/images/hero-blog-details.svg');">
+        <div class="container hero-content text-white py-5">
+            <span class="badge bg-secondary mb-2" style="background-color: var(--secondary-color) !important;">Layout Workshop</span>
+            <h1 class="h1-title mb-4">Designing Panels for Mobile Viewports</h1>
+            <p class="body-text text-white-50 mx-auto max-width-600 mb-0">By Alex Rivera | Published June 25, 2026</p>
+        </div>
+    </section>
+
+    <!-- Section 2: Article Body and Reader Comment Thread -->
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-start">
+                    <article class="mb-5">
+                        <p class="lead-text mb-4">When transitioning from printed comic pages to digital publishing platforms, the biggest challenge is formatting gutters and panels for vertical mobile scroll layouts.</p>
+                        
+                        <p class="body-text mb-4">Traditional comic book pages read in a Z-shaped pattern—left-to-right, then top-to-bottom. But on mobile viewports (which make up over 80% of webcomic readership), readers scroll vertically. A page that crams 6 panels together becomes unreadable on a 6-inch phone. Instead, creators should isolate panels vertically with generous gutter spacing, ensuring the reader focuses on one frame at a time.</p>
+                        
+                        <div class="p-4 border rounded bg-card my-4 text-center" style="border-color: var(--border-color);">
+                            <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg" class="img-fluid rounded">
+                                <rect width="200" height="250" rx="6" fill="#1e293b"/>
+                                <!-- Isolated panel example -->
+                                <rect x="20" y="20" width="160" height="90" rx="4" fill="#5c3ab6" opacity="0.8"/>
+                                <rect x="20" y="140" width="160" height="90" rx="4" fill="#ff5722" opacity="0.8"/>
+                                <line x1="100" y1="110" x2="100" y2="140" stroke="#475569" stroke-width="2" stroke-dasharray="4"/>
+                            </svg>
+                            <span class="caption-text d-block mt-2">Recommended spacing between consecutive panels.</span>
+                        </div>
+
+                        <p class="body-text mb-4">Aim for a gutter space of 100px to 150px between narrative actions. This creates suspense, control pacing, and guarantees speech bubbles don't overlap awkwardly with surrounding art frames. In the next section, we will discuss how to slice print templates automatically inside the ComicVerse workspace.</p>
+                    </article>
+
+                    <!-- Comments Thread (Community Thread) -->
+                    <div class="pt-5 border-top" style="border-color: var(--border-color) !important;">
+                        <h3 class="h3-title mb-4">Community Discussion (2 Comments)</h3>
+                        
+                        <form class="mb-5" onsubmit="event.preventDefault(); alert('Comment posted for review!'); this.reset();">
+                            <div class="mb-3">
+                                <label for="comment-text" class="form-label">Add a comment...</label>
+                                <textarea class="form-control" id="comment-text" rows="3" required placeholder="Share your paneling ideas..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-custom btn-primary-custom">Post Comment</button>
+                        </form>
+
+                        <div class="d-flex flex-column gap-4">
+                            <div class="p-3 border rounded bg-card" style="border-color: var(--border-color);">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <strong class="text-main">Dave Parker</strong>
+                                    <span class="caption-text text-muted">2 days ago</span>
+                                </div>
+                                <p class="body-text mt-2 mb-0 text-main">This vertical gutter rule completely transformed the pacing of my retro pixel comic strips. Readers spent double the time reading each dialogue bubble!</p>
+                            </div>
+                            <div class="p-3 border rounded bg-card" style="border-color: var(--border-color);">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <strong class="text-main">Mia Kowalski</strong>
+                                    <span class="caption-text text-muted">3 days ago</span>
+                                </div>
+                                <p class="body-text mt-2 mb-0 text-main">Great tips. I've been experimenting with diagonal scrolls too, which adds an incredible amount of kinetic action to fight scenes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 text-start">
+                    <div class="footer-logo-container">
+                        <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
+                    </div>
+                    <p class="body-text text-white-50 mt-3">Empowering independent artists and creators to launch original comic series and build lasting communities around webcomics.</p>
+                    <ul class="social-icons-list">
+                        <li><a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a></li>
+                        <li><a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2 offset-lg-1 text-start">
+                    <h4 class="h5-title text-white mb-4">Quick Links</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="home-1.html">Home 1</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2 text-start">
+                    <h4 class="h5-title text-white mb-4">Resources</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="gallery.html">Comic Gallery</a></li>
+                        <li><a href="booking.html">Book Commissions</a></li>
+                        <li><a href="blog.html">Creator Blog</a></li>
+                        <li><a href="contact.html">Support Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3 text-start">
+                    <h4 class="h5-title text-white mb-4">Newsletter</h4>
+                    <p class="body-text text-white-50 mb-3">Sign up for direct weekly digests from the ComicVerse.</p>
+                    <form class="newsletter-form d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email" required aria-label="Footer Email">
+                        <button type="submit" class="btn-custom btn-secondary-custom p-2"><i class="bi bi-send-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <p class="caption-text text-white-50 mb-0">&copy; 2026 ComicVerse. All rights reserved.</p>
+                <div class="d-flex gap-3">
+                    <a href="404.html" class="caption-text text-white-50">Privacy Policy</a>
+                    <a href="404.html" class="caption-text text-white-50">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top-btn" id="backToTop" aria-label="Back to Top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

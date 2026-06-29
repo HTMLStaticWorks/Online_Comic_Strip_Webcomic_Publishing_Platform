@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#0f172a"/>
+  <!-- Brushes and pencils drawing tools outline -->
+  <line x1="100" y1="350" x2="300" y2="150" stroke="#334155" stroke-width="8" stroke-linecap="round" opacity="0.3"/>
+  <path d="M 280 170 L 300 150 L 290 180 Z" fill="#ff5722" opacity="0.4"/>
+  <circle cx="550" cy="200" r="80" stroke="#5c3ab6" stroke-width="4" stroke-dasharray="10 5" fill="none" opacity="0.3"/>
+</svg>

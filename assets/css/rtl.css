@@ -1,0 +1,36 @@
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="rtl"] .ms-auto {
+    margin-right: auto !important;
+    margin-left: unset !important;
+}
+
+[dir="rtl"] .me-auto {
+    margin-left: auto !important;
+    margin-right: unset !important;
+}
+
+[dir="rtl"] .text-start {
+    text-align: right !important;
+}
+
+[dir="rtl"] .text-end {
+    text-align: left !important;
+}
+
+[dir="rtl"] .floating-controls {
+    right: auto;
+    left: 20px;
+}
+
+[dir="rtl"] .back-to-top-btn {
+    right: auto;
+    left: 25px;
+}
+
+[dir="rtl"] .form-input-wrapper .password-toggle-btn {
+    right: auto;
+    left: 15px;
+}

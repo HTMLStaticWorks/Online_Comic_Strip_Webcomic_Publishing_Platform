@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicVerse - Home 1 | Online Comic Strip & Webcomic Publishing Platform</title>
+    <meta name="description" content="Discover, read, and publish original webcomics and comic strips. Join the ComicVerse creator community today.">
+    <!-- Bootstrap 5 CSS -->
+    <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg header-navbar py-2">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home-1.html">
+                <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
+            </a>
+            
+            <button class="navbar-toggler border-0 ms-auto me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1 text-main"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="desktopNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <button class="control-btn" id="rtl-toggle" aria-label="Toggle Direction"><i class="bi bi-translate"></i></button>
+                    <button class="control-btn" id="theme-toggle" aria-label="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+                    <a href="login.html" class="btn-custom btn-outline-custom py-2 px-3">Login</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="mobileNavLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+            </ul>
+            <div class="d-flex flex-column gap-2 mt-4">
+                <div class="d-flex justify-content-center gap-2">
+                    <button class="control-btn" id="rtl-toggle-mobile" onclick="document.getElementById('rtl-toggle').click()"><i class="bi bi-translate"></i></button>
+                    <button class="control-btn" id="theme-toggle-mobile" onclick="document.getElementById('theme-toggle').click()"><i class="bi bi-moon-fill"></i></button>
+                </div>
+                <a href="login.html" class="btn-custom btn-outline-custom w-100">Login</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN SECTIONS -->
+
+    <!-- Section 1: Hero Section -->
+    <section class="hero-section mt-5 text-center" style="background-image: linear-gradient(180deg, rgba(15,23,42,0.85) 0%, rgba(92,58,182,0.85) 100%), url('assets/images/hero-home1.svg');">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 hero-content text-white py-5">
+                    <h1 class="h1-title mb-4">Publish Your Comic Strips To The Universe.</h1>
+                    <p class="body-text text-white-50 mb-5">Create, showcase, and monetize your webcomic series with an intuitive builder and a growing network of global readers who appreciate independent storytellers.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="register.html" class="btn-custom btn-primary-custom">Start Publishing</a>
+                        <a href="gallery.html" class="btn-custom btn-secondary-custom">Explore Comics</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Featured Comics (Grid of 3 Cards) -->
+    <section class="alt-bg">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <h2 class="h2-title">Trending Comic Strips</h2>
+                <p class="body-text">Follow the weekly stories getting highest engagement rates across the platform.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="comic-card">
+                        <img src="assets/images/nebula_cover.png" alt="Tales of Nebula Cover Art" class="comic-card-img">
+                        <h3 class="comic-card-title h3-title mt-3">Tales of Nebula</h3>
+                        <p class="comic-card-text body-text">An epic space comedy about a lost astronaut and their sassy robot assistant traversing asteroid fields.</p>
+                        <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Read Episode 1</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="comic-card">
+                        <img src="assets/images/cyber_cover.png" alt="Cyber Junkies Cover Art" class="comic-card-img">
+                        <h3 class="comic-card-title h3-title mt-3">Cyber Junkies</h3>
+                        <p class="comic-card-text body-text">Chasing neon signs and debugging cybernetic enhancements in a dystopian high-tech retro-future metropolis.</p>
+                        <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Read Episode 1</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="comic-card">
+                        <img src="assets/images/pixel_cover.png" alt="Pixel Adventures Cover Art" class="comic-card-img">
+                        <h3 class="comic-card-title h3-title mt-3">Pixel Adventures</h3>
+                        <p class="comic-card-text body-text">Classic retro gaming nostalgia packed inside daily three-panel comic strips. Lighthearted pixel humor.</p>
+                        <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Read Episode 1</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Creator Toolkit -->
+    <section>
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center">
+                    <svg class="img-fluid rounded shadow" width="450" height="350" viewBox="0 0 450 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="450" height="350" rx="8" fill="#0f172a"/>
+                        <!-- Drawing canvas UI -->
+                        <rect x="20" y="20" width="410" height="310" rx="6" fill="#1e293b"/>
+                        <path d="M 50 100 Q 150 250 350 150" stroke="#ff5722" stroke-width="4" stroke-linecap="round" fill="none"/>
+                        <!-- Color Palettes -->
+                        <circle cx="50" cy="50" r="12" fill="#5c3ab6"/>
+                        <circle cx="80" cy="50" r="12" fill="#ff5722"/>
+                        <circle cx="110" cy="50" r="12" fill="#10b981"/>
+                    </svg>
+                </div>
+                <div class="col-lg-6 text-start">
+                    <h2 class="h2-title mb-4">Ultimate Toolkit For Creators</h2>
+                    <p class="body-text mb-4">You do not need deep coding knowledge to design a gorgeous webcomic portfolio. Our integrated builder supports dynamic layouts, vertical scroll rendering, and instant subscriber notifications.</p>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-4">
+                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Custom panel slicing and alignment</li>
+                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Auto-resizing for responsive screen dimensions</li>
+                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Built-in RSS feed and newsletter delivery</li>
+                    </ul>
+                    <a href="services.html" class="btn-custom btn-secondary-custom">View Creator Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Reader Club -->
+    <section class="alt-bg">
+        <div class="container text-center">
+            <div class="section-title-wrapper mb-4">
+                <h2 class="h2-title">Build Your Comic Community</h2>
+                <p class="body-text mx-auto" style="max-width: 700px;">Offer early-access episodes, behind-the-scenes sketches, or print merchandise directly to your readers through customized membership tiers.</p>
+            </div>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="pricing.html" class="btn-custom btn-primary-custom">View Membership Tiers</a>
+                <a href="about.html" class="btn-custom btn-outline-custom">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Creator Platform Statistics -->
+    <section>
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="stats-card">
+                        <i class="bi bi-people-fill fs-2 mb-3 text-primary" style="color: var(--primary-color) !important;"></i>
+                        <div class="fs-1 fw-bold text-primary mb-2" style="color: var(--primary-color) !important;">120K+</div>
+                        <h4 class="h5-title">Active Readers</h4>
+                        <p class="caption-text mt-2">Engaging daily with original storylines.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stats-card">
+                        <i class="bi bi-book-half fs-2 mb-3 text-secondary" style="color: var(--secondary-color) !important;"></i>
+                        <div class="fs-1 fw-bold text-secondary mb-2" style="color: var(--secondary-color) !important;">850+</div>
+                        <h4 class="h5-title">Creator Series</h4>
+                        <p class="caption-text mt-2">Independently published strips & series.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stats-card">
+                        <i class="bi bi-graph-up-arrow fs-2 mb-3 text-primary" style="color: var(--primary-color) !important;"></i>
+                        <div class="fs-1 fw-bold text-primary mb-2" style="color: var(--primary-color) !important;">94%</div>
+                        <h4 class="h5-title">Creator Retention</h4>
+                        <p class="caption-text mt-2">Satisfied with community monetization rates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Official Comic Merchandise Store -->
+    <section class="alt-bg">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <h2 class="h2-title">Official Merchandise Shop</h2>
+                <p class="body-text">Bring your favorite comic strip frames home with premium printed posters, books, and accessories.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="comic-card">
+                        <img src="assets/images/nebula_book.png" alt="Nebula Volume 1 Paperback Mockup" class="comic-card-img">
+                        <h3 class="comic-card-title h3-title mt-3">Nebula Volume 1 (Paperback)</h3>
+                        <p class="comic-card-text body-text">A 180-page matte finish physical compilation of the space sci-fi anthology series.</p>
+                        <a href="gallery.html" class="btn-custom btn-secondary-custom comic-card-btn">Buy for $24.99</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="comic-card">
+                        <img src="assets/images/creator_pin.png" alt="Creator Enamel Pin Set Mockup" class="comic-card-img">
+                        <h3 class="comic-card-title h3-title mt-3">Creator Enamel Pin Set</h3>
+                        <p class="comic-card-text body-text">Custom metal backing lapel pins featuring character shapes from the Nebula crew.</p>
+                        <a href="gallery.html" class="btn-custom btn-secondary-custom comic-card-btn">Buy for $12.50</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="comic-card">
+                        <img src="assets/images/nebula_hoodie.png" alt="Nebula Graphic Hoodie Mockup" class="comic-card-img">
+                        <h3 class="comic-card-title h3-title mt-3">Nebula Graphic Hoodie</h3>
+                        <p class="comic-card-text body-text">Thick, warm cotton blend hoodie featuring a neon outline sketch print of Alex Rivera.</p>
+                        <a href="gallery.html" class="btn-custom btn-secondary-custom comic-card-btn">Buy for $45.00</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Creator Tips & Blogs -->
+    <section>
+        <div class="container">
+            <div class="section-title-wrapper">
+                <h2 class="h2-title">Creator Tutorials & Tips</h2>
+                <p class="body-text">Improve your panel outlines, lettering, and digital coloring techniques with our latest blog logs.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="comic-card">
+                        <img src="assets/images/panel_layout_tutorial.png" alt="Designing Panels for Mobile Illustration" class="comic-card-img">
+                        <span class="caption-text mt-3">June 25, 2026</span>
+                        <h3 class="comic-card-title h3-title mt-2">Designing Panels for Mobile</h3>
+                        <p class="comic-card-text body-text">Learn how to arrange panel gaps and gutters to match mobile vertical scrolling directions.</p>
+                        <a href="blog-details.html" class="btn-custom btn-primary-custom comic-card-btn">Read Tutorial</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="comic-card">
+                        <img src="assets/images/lettering_tutorial.png" alt="Lettering Rules for Sound FX Illustration" class="comic-card-img">
+                        <span class="caption-text mt-3">June 18, 2026</span>
+                        <h3 class="comic-card-title h3-title mt-2">Lettering Rules for Sound FX</h3>
+                        <p class="comic-card-text body-text">Discover dynamic outlines and color matches that make actions inside panels louder and readable.</p>
+                        <a href="blog-details.html" class="btn-custom btn-primary-custom comic-card-btn">Read Tutorial</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="comic-card">
+                        <img src="assets/images/pricing_tutorial.png" alt="Pricing Commissions Tips Illustration" class="comic-card-img">
+                        <span class="caption-text mt-3">June 12, 2026</span>
+                        <h3 class="comic-card-title h3-title mt-2">Pricing Commissions Tips</h3>
+                        <p class="comic-card-text body-text">A practical guide for setting rates for panels, turnaround grids, and physical book prints.</p>
+                        <a href="blog-details.html" class="btn-custom btn-primary-custom comic-card-btn">Read Tutorial</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Interactive FAQ Accordion -->
+    <section class="alt-bg">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <h2 class="h2-title">Frequently Asked Questions</h2>
+                <p class="body-text">General support queries regarding hosting, copyrights, and monetization.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="homeFaqAccordion">
+                        <div class="accordion-item bg-card border" style="border-color: var(--border-color) !important;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#hfaqOne" aria-expanded="false">
+                                    Do I retain full copyright of my comic panels?
+                                </button>
+                            </h2>
+                            <div id="hfaqOne" class="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                                <div class="accordion-body body-text">
+                                    Yes. Creators retain 100% ownership and copyright of all comic series, graphics, characters, and storylines published on ComicVerse.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-card border mt-3" style="border-color: var(--border-color) !important;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#hfaqTwo" aria-expanded="false">
+                                    How is monthly revenue disbursed?
+                                </button>
+                            </h2>
+                            <div id="hfaqTwo" class="accordion-collapse collapse" data-bs-parent="#homeFaqAccordion">
+                                <div class="accordion-body body-text">
+                                    Earnings accumulated from reader membership pledges are disbursed directly to your connected billing account at the end of each calendar month.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: Live Sketching Workspaces -->
+    <section>
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-start">
+                    <h2 class="h2-title mb-4">Interactive Live Workspaces</h2>
+                    <p class="body-text mb-4">Join active sketching streams directly inside the ComicVerse portal. Watch professional comic illustrators clean line art, apply digital shading panels, and answer reader design queries in real-time chat threads.</p>
+                    <a href="booking.html" class="btn-custom btn-secondary-custom">Join Live Stream</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <svg class="img-fluid rounded shadow" width="450" height="300" viewBox="0 0 450 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="450" height="300" rx="8" fill="#5c3ab6" opacity="0.1"/>
+                        <circle cx="225" cy="150" r="50" fill="#5c3ab6" opacity="0.3"/>
+                        <polygon points="215,130 245,150 215,170" fill="#ff5722"/>
+                        <text x="145" y="240" fill="#0f172a" font-family="Outfit" font-size="18" font-weight="600">Watch Live Panel Ink</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 10: Weekly Readers' Choice Awards -->
+    <section class="alt-bg">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <h2 class="h2-title">Weekly Reader Rankings</h2>
+                <p class="body-text">The highest rated independent comic series voted by active community members this week.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="comic-card">
+                        <div class="fs-1 fw-bold text-secondary mb-3">#1</div>
+                        <svg class="comic-card-img" width="100%" height="150" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="150" rx="5" fill="#5c3ab6" opacity="0.1"/>
+                            <circle cx="150" cy="75" r="25" fill="#5c3ab6" opacity="0.4"/>
+                        </svg>
+                        <h3 class="comic-card-title h4-title mt-3">Tales of Nebula</h3>
+                        <p class="comic-card-text body-text">Score: 9.8 / 10 (4,230 votes)</p>
+                        <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Read Series</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="comic-card">
+                        <div class="fs-1 fw-bold text-muted mb-3">#2</div>
+                        <svg class="comic-card-img" width="100%" height="150" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="150" rx="5" fill="#ff5722" opacity="0.1"/>
+                            <rect x="125" y="50" width="50" height="50" rx="6" fill="#ff5722" opacity="0.4"/>
+                        </svg>
+                        <h3 class="comic-card-title h4-title mt-3">Cyber Junkies</h3>
+                        <p class="comic-card-text body-text">Score: 9.5 / 10 (3,890 votes)</p>
+                        <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Read Series</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="comic-card">
+                        <div class="fs-1 fw-bold text-muted mb-3">#3</div>
+                        <svg class="comic-card-img" width="100%" height="150" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="150" rx="5" fill="#0f172a" opacity="0.1"/>
+                            <line x1="100" y1="75" x2="200" y2="75" stroke="#0f172a" stroke-width="4"/>
+                        </svg>
+                        <h3 class="comic-card-title h4-title mt-3">Pixel Adventures</h3>
+                        <p class="comic-card-text body-text">Score: 9.2 / 10 (3,120 votes)</p>
+                        <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Read Series</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 11: Creator Partnerships -->
+    <section>
+        <div class="container text-center">
+            <div class="section-title-wrapper mb-5">
+                <h2 class="h2-title">Supported Syndicates</h2>
+                <p class="body-text">ComicVerse is integrated directly with major independent publishing groups and print networks.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3">
+                    <div class="p-3 border rounded bg-card" style="border-color: var(--border-color);">
+                        <h4 class="h5-title m-0">IndiePress Network</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 border rounded bg-card" style="border-color: var(--border-color);">
+                        <h4 class="h5-title m-0">Global Webtoon League</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 border rounded bg-card" style="border-color: var(--border-color);">
+                        <h4 class="h5-title m-0">Manga Artist Guild</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 12: Newsletter / Final Call to Action -->
+    <section class="alt-bg text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="h2-title mb-3">Never Miss A Comic Update</h2>
+                    <p class="body-text mb-4">Subscribe to our newsletter to receive curated comic lists, creator interviews, and exclusive discounts on merch.</p>
+                    <form class="newsletter-form d-flex flex-column flex-sm-row gap-3 justify-content-center max-width-500 mx-auto">
+                        <input type="email" class="form-control" placeholder="Enter your email address" required aria-label="Email address">
+                        <button type="submit" class="btn-custom btn-secondary-custom">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 text-start">
+                    <div class="footer-logo-container">
+                        <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
+                    </div>
+                    <p class="body-text text-white-50 mt-3">Empowering independent artists and creators to launch original comic series and build lasting communities around webcomics.</p>
+                    <ul class="social-icons-list">
+                        <li><a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a></li>
+                        <li><a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2 offset-lg-1 text-start">
+                    <h4 class="h5-title text-white mb-4">Quick Links</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="home-1.html">Home 1</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2 text-start">
+                    <h4 class="h5-title text-white mb-4">Resources</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="gallery.html">Comic Gallery</a></li>
+                        <li><a href="booking.html">Book Commissions</a></li>
+                        <li><a href="blog.html">Creator Blog</a></li>
+                        <li><a href="contact.html">Support Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3 text-start">
+                    <h4 class="h5-title text-white mb-4">Newsletter</h4>
+                    <p class="body-text text-white-50 mb-3">Sign up for direct weekly digests from the ComicVerse.</p>
+                    <form class="newsletter-form d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email" required aria-label="Footer Email">
+                        <button type="submit" class="btn-custom btn-secondary-custom p-2"><i class="bi bi-send-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <p class="caption-text text-white-50 mb-0">&copy; 2026 ComicVerse. All rights reserved.</p>
+                <div class="d-flex gap-3">
+                    <a href="404.html" class="caption-text text-white-50">Privacy Policy</a>
+                    <a href="404.html" class="caption-text text-white-50">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top-btn" id="backToTop" aria-label="Back to Top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

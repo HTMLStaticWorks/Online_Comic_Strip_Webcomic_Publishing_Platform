@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#0f172a"/>
+  <!-- Speech bubble patterns representing articles/chats -->
+  <path d="M 150 150 Q 100 150 100 200 Q 100 250 180 250 L 170 280 L 220 250 Q 250 250 250 200 Z" fill="#5c3ab6" opacity="0.2"/>
+  <path d="M 600 120 Q 550 120 550 170 Q 550 220 630 220 L 620 250 L 670 220 Q 700 220 700 170 Z" fill="#ff5722" opacity="0.2"/>
+</svg>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicVerse - Book Commissions | Online Comic Strip & Webcomic Publishing Platform</title>
+    <meta name="description" content="Schedule comic panel commissions, character model sheets, and private portfolio reviews.">
+    <!-- Bootstrap 5 CSS -->
+    <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg header-navbar py-2">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home-1.html">
+                <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
+            </a>
+            
+            <button class="navbar-toggler border-0 ms-auto me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1 text-main"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="desktopNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <button class="control-btn" id="rtl-toggle" aria-label="Toggle Direction"><i class="bi bi-translate"></i></button>
+                    <button class="control-btn" id="theme-toggle" aria-label="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+                    <a href="login.html" class="btn-custom btn-outline-custom py-2 px-3">Login</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="mobileNavLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+            </ul>
+            <div class="d-flex flex-column gap-2 mt-4">
+                <div class="d-flex justify-content-center gap-2">
+                    <button class="control-btn" id="rtl-toggle-mobile" onclick="document.getElementById('rtl-toggle').click()"><i class="bi bi-translate"></i></button>
+                    <button class="control-btn" id="theme-toggle-mobile" onclick="document.getElementById('theme-toggle').click()"><i class="bi bi-moon-fill"></i></button>
+                </div>
+                <a href="login.html" class="btn-custom btn-outline-custom w-100">Login</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN SECTIONS (3-4 sections) -->
+
+    <!-- Section 1: Hero Section -->
+    <section class="hero-section mt-5 text-center" style="background-image: linear-gradient(180deg, rgba(15,23,42,0.85) 0%, rgba(92,58,182,0.85) 100%), url('assets/images/hero-booking.svg');">
+        <div class="container hero-content text-white py-5">
+            <h1 class="h1-title mb-4">Book Commissions</h1>
+            <p class="body-text text-white-50 mx-auto max-width-600 mb-0">Secure an illustration slot, custom panels script revision, or a direct publishing advice consultation.</p>
+        </div>
+    </section>
+
+    <!-- Section 2: Form & Details Grid -->
+    <section>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 text-start">
+                    <h2 class="h2-title mb-4">Reserve Your Design Slot</h2>
+                    <p class="body-text mb-4">I offer limited spots each month for custom webcomic vector coloring, character turnaround model sheets, and script pacing reviews. Fill in your project specs and book an initial session.</p>
+                    
+                    <div class="p-4 border rounded bg-card mb-4" style="border-color: var(--border-color);">
+                        <h4 class="h5-title"><i class="bi bi-calendar-event text-secondary me-2"></i> Current Turnaround: 5-7 Days</h4>
+                        <p class="caption-text mb-0 mt-2">Pencil revisions are emailed within 48 hours of slot confirmation.</p>
+                    </div>
+                    <div class="p-4 border rounded bg-card" style="border-color: var(--border-color);">
+                        <h4 class="h5-title"><i class="bi bi-shield-check text-secondary me-2"></i> Refund Guarantee</h4>
+                        <p class="caption-text mb-0 mt-2">Slots are refundable if requested at least 24 hours before sketch reviews commence.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="p-4 border rounded bg-card" style="border-color: var(--border-color);">
+                        <form onsubmit="event.preventDefault(); alert('Booking request submitted successfully!'); this.reset();">
+                            <div class="mb-3">
+                                <label for="client-name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="client-name" required placeholder="Alex Mercer">
+                            </div>
+                            <div class="mb-3">
+                                <label for="client-email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="client-email" required placeholder="alex@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="service-select" class="form-label">Select Service</label>
+                                <select class="form-select" id="service-select" required>
+                                    <option value="" disabled selected>Choose a collaboration...</option>
+                                    <option value="inking">Vector Inking Clean-up</option>
+                                    <option value="coloring">Digital Color Palette matching</option>
+                                    <option value="lettering">Panel Lettering & Speech Bubbles</option>
+                                    <option value="portfolio">1-on-1 Portfolio review</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="book-date" class="form-label">Preferred Date</label>
+                                <input type="date" class="form-control" id="book-date" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="project-brief" class="form-label">Project Brief</label>
+                                <textarea class="form-control" id="project-brief" rows="3" required placeholder="Describe your characters, panels count, and outline styles..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-custom btn-primary-custom w-100 mt-2">Submit Booking Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Booking Terms Accordion -->
+    <section class="alt-bg">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <h2 class="h2-title">Collaboration Terms</h2>
+                <p class="body-text">Please review these basic guidelines before commissioning panels.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="bookingTermsAccordion">
+                        <div class="accordion-item bg-card border" style="border-color: var(--border-color) !important;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#termOne" aria-expanded="true">
+                                    Do I hold the commercial rights?
+                                </button>
+                            </h2>
+                            <div id="termOne" class="accordion-collapse collapse show" data-bs-parent="#bookingTermsAccordion">
+                                <div class="accordion-body body-text">
+                                    Yes. Once invoices are paid in full, you retain 100% of the commercial and distribution rights of the generated comic panels and characters.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-card border mt-3" style="border-color: var(--border-color) !important;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#termTwo" aria-expanded="false">
+                                    How are revision rounds managed?
+                                </button>
+                            </h2>
+                            <div id="termTwo" class="accordion-collapse collapse" data-bs-parent="#bookingTermsAccordion">
+                                <div class="accordion-body body-text">
+                                    Every custom package includes 2 major sketch revision rounds. Subsequent changes might incur small layout adjustment fees.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 text-start">
+                    <div class="footer-logo-container">
+                        <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
+                    </div>
+                    <p class="body-text text-white-50 mt-3">Empowering independent artists and creators to launch original comic series and build lasting communities around webcomics.</p>
+                    <ul class="social-icons-list">
+                        <li><a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a></li>
+                        <li><a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2 offset-lg-1 text-start">
+                    <h4 class="h5-title text-white mb-4">Quick Links</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="home-1.html">Home 1</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2 text-start">
+                    <h4 class="h5-title text-white mb-4">Resources</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="gallery.html">Comic Gallery</a></li>
+                        <li><a href="booking.html">Book Commissions</a></li>
+                        <li><a href="blog.html">Creator Blog</a></li>
+                        <li><a href="contact.html">Support Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3 text-start">
+                    <h4 class="h5-title text-white mb-4">Newsletter</h4>
+                    <p class="body-text text-white-50 mb-3">Sign up for direct weekly digests from the ComicVerse.</p>
+                    <form class="newsletter-form d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email" required aria-label="Footer Email">
+                        <button type="submit" class="btn-custom btn-secondary-custom p-2"><i class="bi bi-send-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <p class="caption-text text-white-50 mb-0">&copy; 2026 ComicVerse. All rights reserved.</p>
+                <div class="d-flex gap-3">
+                    <a href="404.html" class="caption-text text-white-50">Privacy Policy</a>
+                    <a href="404.html" class="caption-text text-white-50">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top-btn" id="backToTop" aria-label="Back to Top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

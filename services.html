@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicVerse - Services | Online Comic Strip & Webcomic Publishing Platform</title>
+    <meta name="description" content="Explore my freelance comic creation services including concept art, digital coloring, and lettering.">
+    <!-- Bootstrap 5 CSS -->
+    <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg header-navbar py-2">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home-1.html">
+                <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
+            </a>
+            
+            <button class="navbar-toggler border-0 ms-auto me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1 text-main"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="desktopNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <button class="control-btn" id="rtl-toggle" aria-label="Toggle Direction"><i class="bi bi-translate"></i></button>
+                    <button class="control-btn" id="theme-toggle" aria-label="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+                    <a href="login.html" class="btn-custom btn-outline-custom py-2 px-3">Login</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="mobileNavLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+            </ul>
+            <div class="d-flex flex-column gap-2 mt-4">
+                <div class="d-flex justify-content-center gap-2">
+                    <button class="control-btn" id="rtl-toggle-mobile" onclick="document.getElementById('rtl-toggle').click()"><i class="bi bi-translate"></i></button>
+                    <button class="control-btn" id="theme-toggle-mobile" onclick="document.getElementById('theme-toggle').click()"><i class="bi bi-moon-fill"></i></button>
+                </div>
+                <a href="login.html" class="btn-custom btn-outline-custom w-100">Login</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN SECTIONS (3-4 sections) -->
+
+    <!-- Section 1: Hero Section (H1/Paragraph centered, with background image overlay) -->
+    <section class="hero-section mt-5 text-center" style="background-image: linear-gradient(180deg, rgba(15,23,42,0.85) 0%, rgba(92,58,182,0.85) 100%), url('assets/images/hero-services.svg');">
+        <div class="container hero-content text-white py-5">
+            <h1 class="h1-title mb-4">Creator Services</h1>
+            <p class="body-text text-white-50 mx-auto max-width-600 mb-0">Professional illustration, scripting, lettering, and formatting services to help launch your webcomic project.</p>
+        </div>
+    </section>
+
+    <!-- Section 2: Services Grid (8 cards) -->
+    <section>
+        <div class="container">
+            <div class="section-title-wrapper">
+                <h2 class="h2-title">Comic Creation Solutions</h2>
+                <p class="body-text">Select a service to collaborate on your creative project.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="comic-card">
+                        <img src="assets/images/panel_layout_tutorial.png" alt="Panel Scripting Illustration" class="comic-card-img">
+                        <h3 class="comic-card-title h4-title mt-3">Panel Scripting</h3>
+                        <p class="comic-card-text body-text">Structuring script pacing, panel layouts, and dialogue bubble placements.</p>
+                        <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Learn More</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="comic-card">
+                        <img src="assets/images/creator_alex.png" alt="Concept Art Illustration" class="comic-card-img">
+                        <h3 class="comic-card-title h4-title mt-3">Concept Art</h3>
+                        <p class="comic-card-text body-text">Drafting detailed model sheets, expressions, and clothing styles for your characters.</p>
+                        <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Learn More</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="comic-card">
+                        <img src="assets/images/nebula_cover.png" alt="Vector Inking Illustration" class="comic-card-img">
+                        <h3 class="comic-card-title h4-title mt-3">Vector Inking</h3>
+                        <p class="comic-card-text body-text">Transforming rough sketches into high-resolution, smooth vector outline panels.</p>
+                        <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Learn More</a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="comic-card">
+                        <img src="assets/images/cyber_cover.png" alt="Digital Coloring Illustration" class="comic-card-img">
+                        <h3 class="comic-card-title h4-title mt-3">Digital Coloring</h3>
+                        <p class="comic-card-text body-text">Applying rich flat colors or soft digital shading matches for specific genres.</p>
+                        <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Learn More</a>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="comic-card">
+                        <img src="assets/images/lettering_tutorial.png" alt="Comic Lettering Illustration" class="comic-card-img">
+                        <h3 class="comic-card-title h4-title mt-3">Comic Lettering</h3>
+                        <p class="comic-card-text body-text">Selecting perfect typography styles for speech bubbles, narration blocks, and effects.</p>
+                        <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Learn More</a>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="comic-card">
+                        <img src="assets/images/genre_cyberpunk.png" alt="Scroll Converter Illustration" class="comic-card-img">
+                        <h3 class="comic-card-title h4-title mt-3">Scroll Converter</h3>
+                        <p class="comic-card-text body-text">Converting static print page templates to infinite vertical mobile scrolling strips.</p>
+                        <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Learn More</a>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="comic-card">
+                        <img src="assets/images/nebula_book.png" alt="Book Formatting Illustration" class="comic-card-img">
+                        <h3 class="comic-card-title h4-title mt-3">Book Formatting</h3>
+                        <p class="comic-card-text body-text">Configuring crop lines and CMYK color profiles to ready comics for print publishers.</p>
+                        <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Learn More</a>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="comic-card">
+                        <img src="assets/images/pricing_tutorial.png" alt="Monetization Setup Illustration" class="comic-card-img">
+                        <h3 class="comic-card-title h4-title mt-3">Monetization setup</h3>
+                        <p class="comic-card-text body-text">Setting up creator profiles, subscriber membership tiers, and merchandise integrations.</p>
+                        <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: My Design Process -->
+    <section class="alt-bg">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <h2 class="h2-title">My Collaborative Process</h2>
+                <p class="body-text">A structured, step-by-step workflow designed to bring original storylines to life.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="comic-card">
+                        <div class="fs-1 fw-bold text-primary mb-3">1</div>
+                        <img src="assets/images/panel_layout_tutorial.png" alt="Script & Storyboards Illustration" class="comic-card-img" style="height: 150px; object-fit: cover;">
+                        <h3 class="comic-card-title h3-title mt-3">Script & Storyboards</h3>
+                        <p class="comic-card-text body-text">We outline panel paces, dialogue bubble layout flow, and initial character drafts.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="comic-card">
+                        <div class="fs-1 fw-bold text-primary mb-3">2</div>
+                        <img src="assets/images/lettering_tutorial.png" alt="Vector Inking & Dialogues Illustration" class="comic-card-img" style="height: 150px; object-fit: cover;">
+                        <h3 class="comic-card-title h3-title mt-3">Vector Inking & Dialogues</h3>
+                        <p class="comic-card-text body-text">I clean character frames, scale vectors, and place bubble lettering files.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="comic-card">
+                        <div class="fs-1 fw-bold text-primary mb-3">3</div>
+                        <img src="assets/images/cyber_cover.png" alt="Coloring & Delivery Illustration" class="comic-card-img" style="height: 150px; object-fit: cover;">
+                        <h3 class="comic-card-title h3-title mt-3">Coloring & Delivery</h3>
+                        <p class="comic-card-text body-text">We apply digital coloring tones, CMYK settings, and upload scroll files.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: What Collaborators Say -->
+    <section>
+        <div class="container">
+            <div class="section-title-wrapper">
+                <h2 class="h2-title">Client Feedback</h2>
+                <p class="body-text">Read how independent comic writers evaluate my illustration work.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 border rounded bg-card text-center h-100 d-flex flex-column justify-content-between align-items-center" style="border-color: var(--border-color);">
+                        <p class="body-text">"Alex cleaned our hand-drawn pencil panels into vector line arts. The turnaround time was fast, and the lines scaled beautifully for our paperback print book."</p>
+                        <div class="d-flex flex-column align-items-center mt-4">
+                            <img src="assets/images/creator_mia.png" alt="Mia Kowalski Avatar" class="rounded-circle mb-2" style="width: 80px; height: 80px; object-fit: cover;">
+                            <div>
+                                <h4 class="h5-title m-0">Mia Kowalski</h4>
+                                <span class="caption-text text-muted">Author, Cyber Junkies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 border rounded bg-card text-center h-100 d-flex flex-column justify-content-between align-items-center" style="border-color: var(--border-color);">
+                        <p class="body-text">"The scroll converter service completely solved our formatting issues. Our manga series now scrolls perfectly on all phone screens."</p>
+                        <div class="d-flex flex-column align-items-center mt-4">
+                            <img src="assets/images/creator_dave.png" alt="Dave Parker Avatar" class="rounded-circle mb-2" style="width: 80px; height: 80px; object-fit: cover;">
+                            <div>
+                                <h4 class="h5-title m-0">Dave Parker</h4>
+                                <span class="caption-text text-muted">Writer, Pixel Adventures</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Services FAQ -->
+    <section class="alt-bg">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <h2 class="h2-title">Services FAQ</h2>
+                <p class="body-text">Quick support guides regarding custom commissions pricing.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="servicesFaqAccordion">
+                        <div class="accordion-item bg-card border" style="border-color: var(--border-color) !important;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#sfaqOne" aria-expanded="false">
+                                    How is custom panel lettering pricing determined?
+                                </button>
+                            </h2>
+                            <div id="sfaqOne" class="accordion-collapse collapse" data-bs-parent="#servicesFaqAccordion">
+                                <div class="accordion-body body-text">
+                                    Dialogue lettering is calculated based on the total number of frames and speech bubble sizes. Bulk rates are available for full series chapters.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Call To Action -->
+    <section class="alt-bg text-center">
+        <div class="container">
+            <h2 class="h2-title mb-3">Ready to Launch Your Series?</h2>
+            <p class="body-text mb-4">Book a consultation session with me to map out your outline, design assets, and publication timeline.</p>
+            <a href="booking.html" class="btn-custom btn-secondary-custom">Schedule Booking</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 text-start">
+                    <div class="footer-logo-container">
+                        <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
+                    </div>
+                    <p class="body-text text-white-50 mt-3">Empowering independent artists and creators to launch original comic series and build lasting communities around webcomics.</p>
+                    <ul class="social-icons-list">
+                        <li><a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a></li>
+                        <li><a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2 offset-lg-1 text-start">
+                    <h4 class="h5-title text-white mb-4">Quick Links</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="home-1.html">Home 1</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2 text-start">
+                    <h4 class="h5-title text-white mb-4">Resources</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="gallery.html">Comic Gallery</a></li>
+                        <li><a href="booking.html">Book Commissions</a></li>
+                        <li><a href="blog.html">Creator Blog</a></li>
+                        <li><a href="contact.html">Support Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3 text-start">
+                    <h4 class="h5-title text-white mb-4">Newsletter</h4>
+                    <p class="body-text text-white-50 mb-3">Sign up for direct weekly digests from the ComicVerse.</p>
+                    <form class="newsletter-form d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email" required aria-label="Footer Email">
+                        <button type="submit" class="btn-custom btn-secondary-custom p-2"><i class="bi bi-send-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <p class="caption-text text-white-50 mb-0">&copy; 2026 ComicVerse. All rights reserved.</p>
+                <div class="d-flex gap-3">
+                    <a href="404.html" class="caption-text text-white-50">Privacy Policy</a>
+                    <a href="404.html" class="caption-text text-white-50">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top-btn" id="backToTop" aria-label="Back to Top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

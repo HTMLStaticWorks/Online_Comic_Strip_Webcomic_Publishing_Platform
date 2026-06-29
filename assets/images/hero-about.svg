@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#0f172a"/>
+  <!-- Sketch lines and profile outline -->
+  <circle cx="400" cy="200" r="120" stroke="#334155" stroke-width="2" fill="none" opacity="0.3"/>
+  <path d="M 320 280 L 480 280 C 480 200, 320 200, 320 280 Z" fill="#5c3ab6" opacity="0.2"/>
+  <circle cx="400" cy="140" r="40" fill="#ff5722" opacity="0.2"/>
+</svg>

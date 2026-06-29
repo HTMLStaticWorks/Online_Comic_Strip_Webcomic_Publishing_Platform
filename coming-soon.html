@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicVerse - Launching Soon | Coming Soon</title>
+    <!-- Bootstrap 5 CSS -->
+    <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Floating controls at top right of viewport -->
+    <div class="floating-controls">
+        <button class="control-btn" id="rtl-toggle" aria-label="Toggle Direction"><i class="bi bi-translate"></i></button>
+        <button class="control-btn" id="theme-toggle" aria-label="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+    </div>
+
+    <!-- Centered Content Container -->
+    <div class="container d-flex align-items-center justify-content-center min-vh-100 py-5">
+        <div class="text-center">
+            <a href="home-1.html">
+                <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img mb-4">
+            </a>
+            <h1 class="h1-title mb-3">Volume 2 Inking Soon</h1>
+            <p class="body-text mx-auto mb-5" style="max-width: 600px;">I'm currently preparing new character models, vector panels, and the publication platform updates. Subscribe to get early access alerts.</p>
+            
+            <!-- Simple Countdown Visual Layout -->
+            <div class="row justify-content-center g-3 mb-5 max-width-500 mx-auto">
+                <div class="col-3">
+                    <div class="p-3 border rounded bg-card" style="border-color: var(--border-color);">
+                        <div class="fs-2 fw-bold text-primary">12</div>
+                        <span class="caption-text text-muted">Days</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="p-3 border rounded bg-card" style="border-color: var(--border-color);">
+                        <div class="fs-2 fw-bold text-primary">08</div>
+                        <span class="caption-text text-muted">Hours</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="p-3 border rounded bg-card" style="border-color: var(--border-color);">
+                        <div class="fs-2 fw-bold text-primary">45</div>
+                        <span class="caption-text text-muted">Mins</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="p-3 border rounded bg-card" style="border-color: var(--border-color);">
+                        <div class="fs-2 fw-bold text-primary">30</div>
+                        <span class="caption-text text-muted">Secs</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <form class="newsletter-form d-flex flex-column flex-sm-row gap-3 justify-content-center max-width-500 mx-auto mb-4">
+                <input type="email" class="form-control" placeholder="Enter your email" required aria-label="Coming soon email">
+                <button type="submit" class="btn-custom btn-secondary-custom">Notify Me</button>
+            </form>
+            
+            <a href="home-1.html" class="caption-text text-decoration-none"><i class="bi bi-arrow-left"></i> Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

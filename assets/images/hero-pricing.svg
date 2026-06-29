@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#0f172a"/>
+  <!-- Subscription ticket / price outlines -->
+  <rect x="100" y="100" width="180" height="220" rx="8" stroke="#334155" stroke-width="4" fill="none" opacity="0.3"/>
+  <rect x="310" y="70" width="180" height="260" rx="8" stroke="#ff5722" stroke-width="4" fill="none" opacity="0.2"/>
+  <rect x="520" y="100" width="180" height="220" rx="8" stroke="#5c3ab6" stroke-width="4" fill="none" opacity="0.3"/>
+</svg>

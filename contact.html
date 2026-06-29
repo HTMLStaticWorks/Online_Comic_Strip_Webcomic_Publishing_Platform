@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicVerse - Contact | Online Comic Strip & Webcomic Publishing Platform</title>
+    <meta name="description" content="Reach out to ComicVerse support, submit creator requests, or ask general questions.">
+    <!-- Bootstrap 5 CSS -->
+    <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Leaflet.js Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg header-navbar py-2">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home-1.html">
+                <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
+            </a>
+            
+            <button class="navbar-toggler border-0 ms-auto me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1 text-main"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="desktopNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <button class="control-btn" id="rtl-toggle" aria-label="Toggle Direction"><i class="bi bi-translate"></i></button>
+                    <button class="control-btn" id="theme-toggle" aria-label="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+                    <a href="login.html" class="btn-custom btn-outline-custom py-2 px-3">Login</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="mobileNavLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link" href="home-1.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+            </ul>
+            <div class="d-flex flex-column gap-2 mt-4">
+                <div class="d-flex justify-content-center gap-2">
+                    <button class="control-btn" id="rtl-toggle-mobile" onclick="document.getElementById('rtl-toggle').click()"><i class="bi bi-translate"></i></button>
+                    <button class="control-btn" id="theme-toggle-mobile" onclick="document.getElementById('theme-toggle').click()"><i class="bi bi-moon-fill"></i></button>
+                </div>
+                <a href="login.html" class="btn-custom btn-outline-custom w-100">Login</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN SECTIONS (4-5 sections) -->
+
+    <!-- Section 1: Hero Section -->
+    <section class="hero-section mt-5 text-center" style="background-image: linear-gradient(180deg, rgba(15,23,42,0.85) 0%, rgba(92,58,182,0.85) 100%), url('assets/images/hero-contact.svg');">
+        <div class="container hero-content text-white py-5">
+            <h1 class="h1-title mb-4">Contact Me</h1>
+            <p class="body-text text-white-50 mx-auto max-width-600 mb-0">Get in touch for custom comic lettering, vector assets inquiries, or technical publishing support.</p>
+        </div>
+    </section>
+
+    <!-- Section 2: Contact Form & Details Grid -->
+    <section>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 text-start">
+                    <h2 class="h2-title mb-4">Let's Collaborate</h2>
+                    <p class="body-text mb-5">Have an upcoming comic anthology or web series script? Send over your questions and ideas, and let's map out a layout structure.</p>
+                    
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <div class="fs-3 text-primary"><i class="bi bi-envelope-fill"></i></div>
+                        <div>
+                            <h4 class="h5-title m-0">Email Support</h4>
+                            <p class="caption-text m-0">alex.rivera@comicverse.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <div class="fs-3 text-primary"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div>
+                            <h4 class="h5-title m-0">Workspace Location</h4>
+                            <p class="caption-text m-0">Brooklyn, NY 11201</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="p-4 border rounded bg-card" style="border-color: var(--border-color);">
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="contact-name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="contact-name" required placeholder="Full Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contact-email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="contact-email" required placeholder="name@example.com">
+                                </div>
+                                <div class="col-12">
+                                    <label for="contact-subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="contact-subject" required placeholder="e.g. Comic Commission Quote">
+                                </div>
+                                <div class="col-12">
+                                    <label for="contact-message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="contact-message" rows="4" required placeholder="Outline your characters, timeline, and formatting requirements..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-custom btn-primary-custom w-100 mt-2">Send Secure Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Map Placeholder Section (Visual SVG layout representation) -->
+    <section class="alt-bg">
+        <div class="container text-center">
+            <h2 class="h2-title mb-4">Where I Sketch</h2>
+            <div class="p-2 border rounded bg-card mx-auto max-width-600" style="border-color: var(--border-color);">
+                <div id="studio-map" style="width: 100%; height: 250px;" class="rounded"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Contact FAQ accordion -->
+    <section>
+        <div class="container">
+            <div class="section-title-wrapper">
+                <h2 class="h2-title">General Inquiries FAQ</h2>
+                <p class="body-text">Quick support reference regarding platforms support.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="contactFaqAccordion">
+                        <div class="accordion-item bg-card border" style="border-color: var(--border-color) !important;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#cfOne" aria-expanded="true">
+                                    How fast is email support?
+                                </button>
+                            </h2>
+                            <div id="cfOne" class="accordion-collapse collapse show" data-bs-parent="#contactFaqAccordion">
+                                <div class="accordion-body body-text">
+                                    I typically respond to support queries and commission quotes within 24-48 business hours.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 text-start">
+                    <div class="footer-logo-container">
+                        <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
+                    </div>
+                    <p class="body-text text-white-50 mt-3">Empowering independent artists and creators to launch original comic series and build lasting communities around webcomics.</p>
+                    <ul class="social-icons-list">
+                        <li><a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a></li>
+                        <li><a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2 offset-lg-1 text-start">
+                    <h4 class="h5-title text-white mb-4">Quick Links</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="home-1.html">Home 1</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2 text-start">
+                    <h4 class="h5-title text-white mb-4">Resources</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="gallery.html">Comic Gallery</a></li>
+                        <li><a href="booking.html">Book Commissions</a></li>
+                        <li><a href="blog.html">Creator Blog</a></li>
+                        <li><a href="contact.html">Support Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3 text-start">
+                    <h4 class="h5-title text-white mb-4">Newsletter</h4>
+                    <p class="body-text text-white-50 mb-3">Sign up for direct weekly digests from the ComicVerse.</p>
+                    <form class="newsletter-form d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email" required aria-label="Footer Email">
+                        <button type="submit" class="btn-custom btn-secondary-custom p-2"><i class="bi bi-send-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <p class="caption-text text-white-50 mb-0">&copy; 2026 ComicVerse. All rights reserved.</p>
+                <div class="d-flex gap-3">
+                    <a href="404.html" class="caption-text text-white-50">Privacy Policy</a>
+                    <a href="404.html" class="caption-text text-white-50">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top-btn" id="backToTop" aria-label="Back to Top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Leaflet JS Map Engine -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Map Initialization -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var map = L.map('studio-map', {
+                center: [40.7128, -74.0060], // New York City
+                zoom: 14,
+                scrollWheelZoom: false
+            });
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            var marker = L.marker([40.7128, -74.0060]).addTo(map);
+            marker.bindPopup("<b>ComicVerse Studio</b><br>Downtown Creative Design Hub.").openPopup();
+
+            setTimeout(function() {
+                map.invalidateSize();
+            }, 250);
+        });
+    </script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

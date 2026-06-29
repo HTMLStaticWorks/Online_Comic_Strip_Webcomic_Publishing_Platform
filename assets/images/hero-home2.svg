@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#0b0a12"/>
+  <!-- Glowing neon grid lines representing a digital artist workspace -->
+  <g stroke="#5c3ab6" stroke-width="1.5" opacity="0.3">
+    <!-- Horizontal lines -->
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <!-- Vertical lines -->
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="600" y1="0" x2="600" y2="400"/>
+  </g>
+  <!-- Cyberpunk neon circles and stars -->
+  <circle cx="400" cy="200" r="140" stroke="#ff5722" stroke-width="1" stroke-dasharray="8 6" fill="none" opacity="0.4"/>
+  <circle cx="400" cy="200" r="80" stroke="#5c3ab6" stroke-width="2" fill="none" opacity="0.3"/>
+  <path d="M 400 180 L 405 195 L 420 200 L 405 205 L 400 220 L 395 205 L 380 200 L 395 195 Z" fill="#ff5722" opacity="0.5"/>
+</svg>
