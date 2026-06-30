@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ComicVerse - Home 1 | Online Comic Strip & Webcomic Publishing Platform</title>
@@ -17,7 +21,7 @@
 <body>
 
     <!-- Header Section -->
-    <nav class="navbar navbar-expand-lg header-navbar py-2">
+    <nav class="navbar navbar-expand-xl header-navbar py-2">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="home-1.html">
                 <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
@@ -89,7 +93,7 @@
                 <div class="col-lg-8 hero-content text-white py-5">
                     <h1 class="h1-title mb-4">Publish Your Comic Strips To The Universe.</h1>
                     <p class="body-text text-white-50 mb-5">Create, showcase, and monetize your webcomic series with an intuitive builder and a growing network of global readers who appreciate independent storytellers.</p>
-                    <div class="d-flex justify-content-center gap-3">
+                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 align-items-center">
                         <a href="register.html" class="btn-custom btn-primary-custom">Start Publishing</a>
                         <a href="gallery.html" class="btn-custom btn-secondary-custom">Explore Comics</a>
                     </div>
@@ -140,14 +144,66 @@
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 text-center">
                     <svg class="img-fluid rounded shadow" width="450" height="350" viewBox="0 0 450 350" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="450" height="350" rx="8" fill="#0f172a"/>
-                        <!-- Drawing canvas UI -->
-                        <rect x="20" y="20" width="410" height="310" rx="6" fill="#1e293b"/>
-                        <path d="M 50 100 Q 150 250 350 150" stroke="#ff5722" stroke-width="4" stroke-linecap="round" fill="none"/>
-                        <!-- Color Palettes -->
-                        <circle cx="50" cy="50" r="12" fill="#5c3ab6"/>
-                        <circle cx="80" cy="50" r="12" fill="#ff5722"/>
-                        <circle cx="110" cy="50" r="12" fill="#10b981"/>
+                        <!-- Background -->
+                        <rect width="450" height="350" rx="12" fill="#0f172a"/>
+                        
+                        <!-- Window Header/Controls -->
+                        <circle cx="25" cy="20" r="6" fill="#ef4444"/>
+                        <circle cx="45" cy="20" r="6" fill="#f59e0b"/>
+                        <circle cx="65" cy="20" r="6" fill="#10b981"/>
+                        <text x="90" y="24" fill="#64748b" font-family="'Outfit', sans-serif" font-size="12" font-weight="500">ComicVerse Vector Builder</text>
+                        
+                        <!-- Tool Sidebar (Left) -->
+                        <rect x="15" y="45" width="45" height="280" rx="8" fill="#1e293b" opacity="0.8"/>
+                        <!-- Tool Icons (Represented by shapes) -->
+                        <rect x="25" y="60" width="25" height="25" rx="4" fill="#6366f1"/> <!-- Active Tool -->
+                        <circle cx="37" cy="110" r="10" stroke="#64748b" stroke-width="2" fill="none"/>
+                        <path d="M 27 165 L 47 150 L 47 165 Z" fill="#64748b"/>
+                        <rect x="27" y="200" width="20" height="6" rx="2" fill="#64748b"/>
+                        <path d="M 27 245 L 37 255 L 47 245" stroke="#64748b" stroke-width="3" stroke-linecap="round" fill="none"/>
+                        
+                        <!-- Main Drawing Canvas -->
+                        <rect x="75" y="45" width="255" height="280" rx="8" fill="#1e293b"/>
+                        
+                        <!-- Grid lines on canvas for tech feel -->
+                        <line x1="75" y1="115" x2="330" y2="115" stroke="#334155" stroke-dasharray="4"/>
+                        <line x1="75" y1="185" x2="330" y2="185" stroke="#334155" stroke-dasharray="4"/>
+                        <line x1="75" y1="255" x2="330" y2="255" stroke="#334155" stroke-dasharray="4"/>
+                        <line x1="138" y1="45" x2="138" y2="325" stroke="#334155" stroke-dasharray="4"/>
+                        <line x1="202" y1="45" x2="202" y2="325" stroke="#334155" stroke-dasharray="4"/>
+                        <line x1="266" y1="45" x2="266" y2="325" stroke="#334155" stroke-dasharray="4"/>
+                        
+                        <!-- Vector Artwork: A cute cloud and lightning/star -->
+                        <path d="M 120 180 C 120 160, 140 150, 160 150 C 170 135, 200 135, 215 150 C 235 150, 250 165, 250 185 C 250 205, 230 215, 210 215 H 140 C 120 215, 120 195, 120 180 Z" fill="#6366f1" fill-opacity="0.15" stroke="#6366f1" stroke-width="3"/>
+                        <path d="M 175 200 L 160 235 L 180 235 L 170 270 L 205 220 L 185 220 Z" fill="#f43f5e"/>
+                        
+                        <!-- Vector Pen/Nodes Overlay -->
+                        <line x1="160" y1="150" x2="180" y2="105" stroke="#10b981" stroke-width="2"/>
+                        <circle cx="180" cy="105" r="4" fill="#10b981"/>
+                        <rect x="156" y="146" width="8" height="8" fill="#10b981"/>
+                        <rect x="211" y="146" width="8" height="8" fill="#10b981"/>
+                        
+                        <!-- Color Palette Panel (Right) -->
+                        <rect x="345" y="45" width="90" height="280" rx="8" fill="#1e293b" opacity="0.8"/>
+                        <text x="355" y="65" fill="#94a3b8" font-family="'Outfit', sans-serif" font-size="11" font-weight="600">SWATCHES</text>
+                        <circle cx="365" cy="95" r="10" fill="#6366f1"/>
+                        <circle cx="390" cy="95" r="10" fill="#f43f5e"/>
+                        <circle cx="415" cy="95" r="10" fill="#10b981"/>
+                        <circle cx="365" cy="125" r="10" fill="#e879f9"/>
+                        <circle cx="390" cy="125" r="10" fill="#fb7185"/>
+                        <circle cx="415" cy="125" r="10" fill="#38bdf8"/>
+                        
+                        <!-- Layers Panel (Right - Lower) -->
+                        <text x="355" y="175" fill="#94a3b8" font-family="'Outfit', sans-serif" font-size="11" font-weight="600">LAYERS</text>
+                        <!-- Layer Item 1 -->
+                        <rect x="355" y="190" width="70" height="24" rx="4" fill="#334155"/>
+                        <text x="365" y="206" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="9">Vector Cloud</text>
+                        <!-- Layer Item 2 -->
+                        <rect x="355" y="222" width="70" height="24" rx="4" fill="#0f172a" opacity="0.5"/>
+                        <text x="365" y="238" fill="#94a3b8" font-family="'Outfit', sans-serif" font-size="9">Lightning Art</text>
+                        <!-- Layer Item 3 -->
+                        <rect x="355" y="254" width="70" height="24" rx="4" fill="#0f172a" opacity="0.5"/>
+                        <text x="365" y="270" fill="#94a3b8" font-family="'Outfit', sans-serif" font-size="9">Background</text>
                     </svg>
                 </div>
                 <div class="col-lg-6 text-start">
@@ -171,7 +227,7 @@
                 <h2 class="h2-title">Build Your Comic Community</h2>
                 <p class="body-text mx-auto" style="max-width: 700px;">Offer early-access episodes, behind-the-scenes sketches, or print merchandise directly to your readers through customized membership tiers.</p>
             </div>
-            <div class="d-flex justify-content-center gap-3">
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 align-items-center">
                 <a href="pricing.html" class="btn-custom btn-primary-custom">View Membership Tiers</a>
                 <a href="about.html" class="btn-custom btn-outline-custom">Learn More</a>
             </div>
@@ -297,7 +353,7 @@
                     <div class="accordion" id="homeFaqAccordion">
                         <div class="accordion-item bg-card border" style="border-color: var(--border-color) !important;">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#hfaqOne" aria-expanded="false">
+                                <button class="accordion-button collapsed bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#hfaqOne" aria-expanded="false">
                                     Do I retain full copyright of my comic panels?
                                 </button>
                             </h2>
@@ -336,10 +392,25 @@
                 </div>
                 <div class="col-lg-6 text-center">
                     <svg class="img-fluid rounded shadow" width="450" height="300" viewBox="0 0 450 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="450" height="300" rx="8" fill="#5c3ab6" opacity="0.1"/>
-                        <circle cx="225" cy="150" r="50" fill="#5c3ab6" opacity="0.3"/>
-                        <polygon points="215,130 245,150 215,170" fill="#ff5722"/>
-                        <text x="145" y="240" fill="#0f172a" font-family="Outfit" font-size="18" font-weight="600">Watch Live Panel Ink</text>
+                        <defs>
+                            <clipPath id="video-clip">
+                                <rect width="450" height="300" rx="12" />
+                            </clipPath>
+                        </defs>
+                        <!-- Background image preview -->
+                        <image href="assets/images/panel_layout_tutorial.png" width="450" height="300" x="0" y="0" preserveAspectRatio="xMidYMid slice" clip-path="url(#video-clip)"/>
+                        
+                        <!-- Translucent dark overlay for better text/button readability -->
+                        <rect width="450" height="300" rx="12" fill="#0f172a" opacity="0.45" clip-path="url(#video-clip)"/>
+                        
+                        <!-- Play Button Outer Glow -->
+                        <circle cx="225" cy="150" r="40" fill="#ffffff" opacity="0.9" />
+                        <!-- Play Icon -->
+                        <polygon points="218,135 240,150 218,165" fill="#f43f5e"/>
+                        
+                        <!-- Label pill overlay -->
+                        <rect x="130" y="215" width="190" height="32" rx="16" fill="#0f172a" opacity="0.8"/>
+                        <text x="225" y="235" text-anchor="middle" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="14" font-weight="600" style="direction: ltr !important;">Watch Live Panel Ink</text>
                     </svg>
                 </div>
             </div>
@@ -359,7 +430,10 @@
                         <div class="fs-1 fw-bold text-secondary mb-3">#1</div>
                         <svg class="comic-card-img" width="100%" height="150" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="300" height="150" rx="5" fill="#5c3ab6" opacity="0.1"/>
-                            <circle cx="150" cy="75" r="25" fill="#5c3ab6" opacity="0.4"/>
+                            <!-- Space Planet & Star -->
+                            <circle cx="150" cy="75" r="24" fill="#5c3ab6" opacity="0.3"/>
+                            <ellipse cx="150" cy="75" rx="36" ry="8" stroke="#5c3ab6" stroke-width="4" transform="rotate(-15 150 75)"/>
+                            <path d="M 185 50 L 188 56 L 194 57 L 189 61 L 191 67 L 185 64 L 179 67 L 181 61 L 176 57 L 182 56 Z" fill="#ff5722"/>
                         </svg>
                         <h3 class="comic-card-title h4-title mt-3">Tales of Nebula</h3>
                         <p class="comic-card-text body-text">Score: 9.8 / 10 (4,230 votes)</p>
@@ -371,7 +445,10 @@
                         <div class="fs-1 fw-bold text-muted mb-3">#2</div>
                         <svg class="comic-card-img" width="100%" height="150" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="300" height="150" rx="5" fill="#ff5722" opacity="0.1"/>
-                            <rect x="125" y="50" width="50" height="50" rx="6" fill="#ff5722" opacity="0.4"/>
+                            <!-- Cyber Visor -->
+                            <path d="M 110 65 H 190 L 180 90 H 120 Z" fill="#ff5722" opacity="0.4"/>
+                            <path d="M 105 63 H 195 L 183 93 H 117 Z" stroke="#ff5722" stroke-width="2" fill="none"/>
+                            <line x1="125" y1="78" x2="175" y2="78" stroke="#ffffff" stroke-width="2"/>
                         </svg>
                         <h3 class="comic-card-title h4-title mt-3">Cyber Junkies</h3>
                         <p class="comic-card-text body-text">Score: 9.5 / 10 (3,890 votes)</p>
@@ -382,8 +459,13 @@
                     <div class="comic-card">
                         <div class="fs-1 fw-bold text-muted mb-3">#3</div>
                         <svg class="comic-card-img" width="100%" height="150" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="300" height="150" rx="5" fill="#0f172a" opacity="0.1"/>
-                            <line x1="100" y1="75" x2="200" y2="75" stroke="#0f172a" stroke-width="4"/>
+                            <rect width="300" height="150" rx="5" fill="#10b981" opacity="0.1"/>
+                            <!-- Game Controller -->
+                            <rect x="110" y="55" width="80" height="40" rx="10" fill="#10b981" opacity="0.4"/>
+                            <rect x="110" y="55" width="80" height="40" rx="10" stroke="#10b981" stroke-width="3" fill="none"/>
+                            <path d="M 125 75 H 135 M 130 70 V 80" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="165" cy="78" r="4" fill="#ff5722"/>
+                            <circle cx="177" cy="70" r="4" fill="#ff5722"/>
                         </svg>
                         <h3 class="comic-card-title h4-title mt-3">Pixel Adventures</h3>
                         <p class="comic-card-text body-text">Score: 9.2 / 10 (3,120 votes)</p>
@@ -403,17 +485,17 @@
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-3">
-                    <div class="p-3 border rounded bg-card" style="border-color: var(--border-color);">
+                    <div class="p-3 border rounded bg-card h-100 d-flex align-items-center justify-content-center text-center" style="border-color: var(--border-color) !important;">
                         <h4 class="h5-title m-0">IndiePress Network</h4>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="p-3 border rounded bg-card" style="border-color: var(--border-color);">
+                    <div class="p-3 border rounded bg-card h-100 d-flex align-items-center justify-content-center text-center" style="border-color: var(--border-color) !important;">
                         <h4 class="h5-title m-0">Global Webtoon League</h4>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="p-3 border rounded bg-card" style="border-color: var(--border-color);">
+                    <div class="p-3 border rounded bg-card h-100 d-flex align-items-center justify-content-center text-center" style="border-color: var(--border-color) !important;">
                         <h4 class="h5-title m-0">Manga Artist Guild</h4>
                     </div>
                 </div>

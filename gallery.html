@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ComicVerse - Gallery | Online Comic Strip & Webcomic Publishing Platform</title>
@@ -17,7 +21,7 @@
 <body>
 
     <!-- Header Section -->
-    <nav class="navbar navbar-expand-lg header-navbar py-2">
+    <nav class="navbar navbar-expand-xl header-navbar py-2">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="home-1.html">
                 <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
@@ -128,7 +132,7 @@
                 <!-- Item 4 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="comic-card">
-                        <img src="assets/images/nebula_cover.png" alt="Stardust Chronicles Cover Art" class="comic-card-img">
+                        <img src="assets/images/genre_scifi.png" alt="Stardust Chronicles Cover Art" class="comic-card-img">
                         <h3 class="comic-card-title h4-title mt-3">Stardust Chronicles</h3>
                         <p class="comic-card-text body-text">Genre: Cosmic Fantasy</p>
                         <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">View Art Panels</a>
@@ -137,7 +141,7 @@
                 <!-- Item 5 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="comic-card">
-                        <img src="assets/images/cyber_cover.png" alt="Neon Highways Cover Art" class="comic-card-img">
+                        <img src="assets/images/genre_cyberpunk.png" alt="Neon Highways Cover Art" class="comic-card-img">
                         <h3 class="comic-card-title h4-title mt-3">Neon Highways</h3>
                         <p class="comic-card-text body-text">Genre: Retro Synthwave</p>
                         <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">View Art Panels</a>
@@ -166,21 +170,21 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="comic-card">
-                        <img src="assets/images/creator_pin.png" alt="Nebula Sketch Fan Art" class="comic-card-img">
+                        <img src="assets/images/genre_scifi.png" alt="Nebula Sketch Fan Art" class="comic-card-img">
                         <h3 class="comic-card-title h4-title mt-3">Nebula Sketch</h3>
                         <p class="comic-card-text body-text">By Reader @SketchyJoe</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="comic-card">
-                        <img src="assets/images/creator_mia.png" alt="Cyber Junkie Avatar Fan Art" class="comic-card-img">
+                        <img src="assets/images/creator_dave.png" alt="Cyber Junkie Avatar Fan Art" class="comic-card-img">
                         <h3 class="comic-card-title h4-title mt-3">Cyber Junkie Avatar</h3>
                         <p class="comic-card-text body-text">By Reader @NeonPulse</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="comic-card">
-                        <img src="assets/images/pixel_cover.png" alt="Pixel Sprite Fan Art" class="comic-card-img">
+                        <img src="assets/images/creator_alex.png" alt="Pixel Sprite Fan Art" class="comic-card-img">
                         <h3 class="comic-card-title h4-title mt-3">Pixel Sprite</h3>
                         <p class="comic-card-text body-text">By Reader @RetroPixel</p>
                     </div>
@@ -198,8 +202,11 @@
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-5">
-                    <div class="p-4 border rounded bg-card text-start h-100 d-flex flex-column justify-content-between" style="border-color: var(--border-color);">
+                    <div class="p-4 border rounded bg-card text-start h-100 d-flex flex-column justify-content-between" style="border-color: var(--border-color) !important;">
                         <div>
+                            <div class="mb-3 text-center">
+                                <img src="assets/images/nebula_book.png" alt="Nebula Vol. 1 Paperback Book" class="img-fluid rounded" style="height: 180px; object-fit: contain;">
+                            </div>
                             <h4 class="h5-title">Nebula Vol. 1 Paperback</h4>
                             <p class="body-text mt-3">Includes 25 full-color daily webcomic episodes, concept drafts, and writer commentary logs.</p>
                         </div>
@@ -207,8 +214,11 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <div class="p-4 border rounded bg-card text-start h-100 d-flex flex-column justify-content-between" style="border-color: var(--border-color);">
+                    <div class="p-4 border rounded bg-card text-start h-100 d-flex flex-column justify-content-between" style="border-color: var(--border-color) !important;">
                         <div>
+                            <div class="mb-3 text-center">
+                                <img src="assets/images/cyber_cover.png" alt="Cyber Junkies Poster Pack" class="img-fluid rounded" style="height: 180px; object-fit: contain;">
+                            </div>
                             <h4 class="h5-title">Cyber Junkies Poster Pack</h4>
                             <p class="body-text mt-3">A bundle of 5 high-resolution glossy posters featuring cyberpunk outline illustrations.</p>
                         </div>
@@ -231,13 +241,37 @@
                     <div class="accordion" id="galleryFaqAccordion">
                         <div class="accordion-item bg-card border" style="border-color: var(--border-color) !important;">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#gfaqOne" aria-expanded="false">
+                                <button class="accordion-button collapsed bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#gfaqOne" aria-expanded="false">
                                     Can I use gallery panels for non-commercial fan videos?
                                 </button>
                             </h2>
                             <div id="gfaqOne" class="accordion-collapse collapse" data-bs-parent="#galleryFaqAccordion">
                                 <div class="accordion-body body-text">
                                     Yes. Non-commercial fan derivative works are permitted as long as credit is clearly attributed to the original creator profile.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-card border mt-3" style="border-color: var(--border-color) !important;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#gfaqTwo" aria-expanded="false">
+                                    How can I request high-resolution prints of digital panels?
+                                </button>
+                            </h2>
+                            <div id="gfaqTwo" class="accordion-collapse collapse" data-bs-parent="#galleryFaqAccordion">
+                                <div class="accordion-body body-text">
+                                    You can order physical paperback copies and poster sets directly from the Print Anthologies section above, or submit custom print requests via the Contact Page.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-card border mt-3" style="border-color: var(--border-color) !important;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#gfaqThree" aria-expanded="false">
+                                    Do you allow redraws or recoloring of your vector outlines?
+                                </button>
+                            </h2>
+                            <div id="gfaqThree" class="accordion-collapse collapse" data-bs-parent="#galleryFaqAccordion">
+                                <div class="accordion-body body-text">
+                                    Yes, fan-colored versions are highly welcomed! Please credit ComicVerse and link back to the original series when sharing your colored panels on social networks.
                                 </div>
                             </div>
                         </div>

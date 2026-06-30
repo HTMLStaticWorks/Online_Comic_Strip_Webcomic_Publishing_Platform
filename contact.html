@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ComicVerse - Contact | Online Comic Strip & Webcomic Publishing Platform</title>
@@ -19,7 +23,7 @@
 <body>
 
     <!-- Header Section -->
-    <nav class="navbar navbar-expand-lg header-navbar py-2">
+    <nav class="navbar navbar-expand-xl header-navbar py-2">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="home-1.html">
                 <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
@@ -108,11 +112,22 @@
                         </div>
                     </div>
                     
+                    
                     <div class="d-flex align-items-center gap-3 mb-4">
                         <div class="fs-3 text-primary"><i class="bi bi-geo-alt-fill"></i></div>
                         <div>
                             <h4 class="h5-title m-0">Workspace Location</h4>
                             <p class="caption-text m-0">Brooklyn, NY 11201</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <h4 class="h5-title mb-3">Connect on Socials</h4>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="control-btn d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; border-radius: 50%; font-size: 1.2rem; display: flex !important;" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="control-btn d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; border-radius: 50%; font-size: 1.2rem; display: flex !important;" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="control-btn d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; border-radius: 50%; font-size: 1.2rem; display: flex !important;" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                            <a href="#" class="control-btn d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; border-radius: 50%; font-size: 1.2rem; display: flex !important;" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
                         </div>
                     </div>
                 </div>
@@ -170,13 +185,37 @@
                     <div class="accordion" id="contactFaqAccordion">
                         <div class="accordion-item bg-card border" style="border-color: var(--border-color) !important;">
                             <h2 class="accordion-header">
-                                <button class="accordion-button bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#cfOne" aria-expanded="true">
+                                <button class="accordion-button collapsed bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#cfOne" aria-expanded="false">
                                     How fast is email support?
                                 </button>
                             </h2>
-                            <div id="cfOne" class="accordion-collapse collapse show" data-bs-parent="#contactFaqAccordion">
+                            <div id="cfOne" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
                                 <div class="accordion-body body-text">
                                     I typically respond to support queries and commission quotes within 24-48 business hours.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-card border mt-3" style="border-color: var(--border-color) !important;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#cfTwo" aria-expanded="false">
+                                    Can I request a phone call or video consultation?
+                                </button>
+                            </h2>
+                            <div id="cfTwo" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+                                <div class="accordion-body body-text">
+                                    Yes, virtual face-to-face meetings can be scheduled directly from the booking page. Simply select a slot that fits your schedule.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-card border mt-3" style="border-color: var(--border-color) !important;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#cfThree" aria-expanded="false">
+                                    Do you offer refunds on custom commission orders?
+                                </button>
+                            </h2>
+                            <div id="cfThree" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+                                <div class="accordion-body body-text">
+                                    Because custom comic illustrations take extensive time and labor, we do not offer full refunds once drafting has begun. However, revision rounds are included in all packages.
                                 </div>
                             </div>
                         </div>

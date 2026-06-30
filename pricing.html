@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ComicVerse - Pricing | Online Comic Strip & Webcomic Publishing Platform</title>
@@ -17,7 +21,7 @@
 <body>
 
     <!-- Header Section -->
-    <nav class="navbar navbar-expand-lg header-navbar py-2">
+    <nav class="navbar navbar-expand-xl header-navbar py-2">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="home-1.html">
                 <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
@@ -93,15 +97,15 @@
     <!-- Section 2: Pricing Table (3 cards: Middle is popular highlighted with Primary button, others Secondary button) -->
     <section>
         <div class="container">
-            <div class="row g-4 justify-content-center align-items-center">
+            <div class="row g-4 justify-content-center">
                 <!-- Card 1: Basic Plan -->
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="comic-card py-5">
                         <span class="badge bg-secondary mb-3" style="background-color: var(--secondary-color) !important;">Free Reader</span>
                         <h3 class="comic-card-title h3-title">$0 <span class="fs-6 text-muted">/ forever</span></h3>
                         <p class="body-text mt-2">Perfect for reading all daily public comic strips.</p>
                         <hr class="w-75 my-4" style="border-color: var(--border-color);">
-                        <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
+                        <ul class="list-unstyled d-flex flex-column align-items-center gap-2 mb-4">
                             <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Access public episodes</li>
                             <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Follow up to 5 creators</li>
                             <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Ad-supported layout</li>
@@ -111,13 +115,13 @@
                 </div>
                 
                 <!-- Card 2: Creator Plan (POPULAR) - Primary Button -->
-                <div class="col-md-4">
-                    <div class="comic-card py-5 border-2 border-primary" style="transform: scale(1.05); box-shadow: 0 15px 30px rgba(92, 58, 182, 0.1);">
+                <div class="col-md-6 col-lg-4">
+                    <div class="comic-card py-5 border-2 border-primary" style="box-shadow: 0 15px 30px rgba(92, 58, 182, 0.1);">
                         <span class="badge bg-primary mb-3" style="background-color: var(--primary-color) !important;">Creator Pro</span>
                         <h3 class="comic-card-title h3-title">$9 <span class="fs-6 text-muted">/ month</span></h3>
                         <p class="body-text mt-2">Most popular plan for independent digital artists.</p>
                         <hr class="w-75 my-4" style="border-color: var(--border-color);">
-                        <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
+                        <ul class="list-unstyled d-flex flex-column align-items-center gap-2 mb-4">
                             <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Infinite public/private uploads</li>
                             <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Dynamic subscriber billing</li>
                             <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Custom CSS styling templates</li>
@@ -128,13 +132,13 @@
                 </div>
 
                 <!-- Card 3: Publisher Plan -->
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="comic-card py-5">
                         <span class="badge bg-secondary mb-3" style="background-color: var(--secondary-color) !important;">Studio Team</span>
                         <h3 class="comic-card-title h3-title">$29 <span class="fs-6 text-muted">/ month</span></h3>
                         <p class="body-text mt-2">For comic collectives and indie publishing houses.</p>
                         <hr class="w-75 my-4" style="border-color: var(--border-color);">
-                        <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
+                        <ul class="list-unstyled d-flex flex-column align-items-center gap-2 mb-4">
                             <li><i class="bi bi-check-circle-fill text-primary me-2"></i> All features of Creator Pro</li>
                             <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Multi-author workspace support</li>
                             <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Print-on-demand API conversion</li>
@@ -159,11 +163,11 @@
                     <div class="accordion" id="faqAccordion">
                         <div class="accordion-item bg-card border" style="border-color: var(--border-color) !important;">
                             <h2 class="accordion-header">
-                                <button class="accordion-button bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                                <button class="accordion-button collapsed bg-card text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
                                     Can I change plans at any time?
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body body-text">
                                     Yes. You can upgrade, downgrade, or cancel your Pro/Studio subscription at any time. There are no lock-in contracts.
                                 </div>

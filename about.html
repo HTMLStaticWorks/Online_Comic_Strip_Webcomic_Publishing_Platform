@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ComicVerse - About | Online Comic Strip & Webcomic Publishing Platform</title>
@@ -17,7 +21,7 @@
 <body>
 
     <!-- Header Section -->
-    <nav class="navbar navbar-expand-lg header-navbar py-2">
+    <nav class="navbar navbar-expand-xl header-navbar py-2">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="home-1.html">
                 <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
@@ -95,7 +99,7 @@
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-5 text-center d-flex justify-content-center">
-                    <img src="assets/images/creator_alex.png" alt="Alex Rivera Portrait" class="img-fluid rounded-circle border border-primary p-2 shadow mx-auto" style="width: 400px; height: 400px; object-fit: cover; max-width: 100%;">
+                    <img src="assets/images/creator_alex.png" alt="Alex Rivera Portrait" class="img-fluid rounded-circle border border-primary p-2 shadow mx-auto" style="width: 400px; height: 400px; object-fit: contain; max-width: 100%;">
                 </div>
                 <div class="col-lg-7 text-start">
                     <h2 class="h2-title mb-3">Hi, I'm Alex Rivera</h2>
@@ -116,17 +120,26 @@
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-8">
-                    <div class="p-4 border rounded bg-card mb-3" style="border-color: var(--border-color);">
-                        <h4 class="h5-title"><i class="bi bi-award-fill text-secondary me-2"></i> 2024: Launching ComicVerse Platform</h4>
-                        <p class="caption-text mb-0 mt-2">Began coding the publishing suite to host multi-panel strips and monthly subscriber management channels.</p>
+                    <div class="p-4 border rounded bg-card mb-3 text-center" style="border-color: var(--border-color) !important;">
+                        <h4 class="h5-title d-flex align-items-center justify-content-center gap-3">
+                            <i class="bi bi-award-fill" style="color: #f59e0b !important; font-size: 1.5rem;"></i>
+                            <span>2024: Launching ComicVerse Platform</span>
+                        </h4>
+                        <p class="caption-text mb-0 mt-2 text-center">Began coding the publishing suite to host multi-panel strips and monthly subscriber management channels.</p>
                     </div>
-                    <div class="p-4 border rounded bg-card mb-3" style="border-color: var(--border-color);">
-                        <h4 class="h5-title"><i class="bi bi-journal-album text-secondary me-2"></i> 2022: Published "Tales of Nebula" Book</h4>
-                        <p class="caption-text mb-0 mt-2">Compiled and printed my first physical comic anthology book, funding it through reader pre-orders.</p>
+                    <div class="p-4 border rounded bg-card mb-3 text-center" style="border-color: var(--border-color) !important;">
+                        <h4 class="h5-title d-flex align-items-center justify-content-center gap-3">
+                            <i class="bi bi-journal-album" style="color: var(--primary-color) !important; font-size: 1.5rem;"></i>
+                            <span>2022: Published "Tales of Nebula" Book</span>
+                        </h4>
+                        <p class="caption-text mb-0 mt-2 text-center">Compiled and printed my first physical comic anthology book, funding it through reader pre-orders.</p>
                     </div>
-                    <div class="p-4 border rounded bg-card" style="border-color: var(--border-color);">
-                        <h4 class="h5-title"><i class="bi bi-brush-fill text-secondary me-2"></i> 2018: Full-Time Freelance Illustrator</h4>
-                        <p class="caption-text mb-0 mt-2">Transitioned into drawing original daily three-panel comic strips full-time, working with various publishers.</p>
+                    <div class="p-4 border rounded bg-card text-center" style="border-color: var(--border-color) !important;">
+                        <h4 class="h5-title d-flex align-items-center justify-content-center gap-3">
+                            <i class="bi bi-brush-fill" style="color: #ff5722 !important; font-size: 1.5rem;"></i>
+                            <span>2018: Full-Time Freelance Illustrator</span>
+                        </h4>
+                        <p class="caption-text mb-0 mt-2 text-center">Transitioned into drawing original daily three-panel comic strips full-time, working with various publishers.</p>
                     </div>
                 </div>
             </div>
@@ -161,15 +174,21 @@
                     <div class="comic-card">
                         <svg class="comic-card-img" width="100%" height="220" viewBox="0 0 300 220" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="300" height="220" rx="5" fill="#ff5722" opacity="0.1"/>
-                            <!-- Direct Pledge Coin Slot & Floating Hearts -->
-                            <path d="M100 130 H200 V150 H100 Z" fill="#ff5722" opacity="0.3"/>
-                            <line x1="120" y1="140" x2="180" y2="140" stroke="#ff5722" stroke-width="4" stroke-linecap="round"/>
-                            <!-- Falling Coin with Heart -->
-                            <circle cx="150" cy="85" r="30" fill="#5c3ab6"/>
-                            <path d="M150 95 C150 95, 138 85, 144 79 C148 75, 150 78, 150 78 C150 78, 152 75, 156 79 C162 85, 150 95, 150 95 Z" fill="#ffffff"/>
+                            <!-- Concentric circles for glowing support effect -->
+                            <circle cx="150" cy="110" r="60" stroke="#ff5722" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
+                            <circle cx="150" cy="110" r="45" stroke="#ff5722" stroke-width="1" stroke-dasharray="2 2" opacity="0.6"/>
+                            
+                            <!-- Support Arrows forming a circle -->
+                            <path d="M 115 110 A 35 35 0 0 1 185 110" stroke="#5c3ab6" stroke-width="3" stroke-linecap="round" fill="none"/>
+                            <path d="M 185 110 A 35 35 0 0 1 115 110" stroke="#5c3ab6" stroke-width="3" stroke-linecap="round" fill="none" stroke-dasharray="5 5"/>
+                            <polygon points="185,105 190,113 180,113" fill="#5c3ab6"/>
+                            <polygon points="115,115 110,107 120,107" fill="#5c3ab6"/>
+                            
+                            <!-- Glowing Heart in Center -->
+                            <path d="M150 128 C150 128, 125 108, 137 96 C145 88, 150 94, 150 94 C150 94, 155 88, 163 96 C175 108, 150 128, 150 128 Z" fill="#ff5722"/>
                         </svg>
                         <h3 class="comic-card-title h3-title mt-3">Direct Support</h3>
-                        <p class="comic-card-text body-text">Pledging directly to creators builds healthier hubs, completely bypassing mainstream middlemen publishers.</p>
+                        <p class="comic-card-text body-text text-center">Pledging directly to creators builds healthier hubs, completely bypassing mainstream middlemen publishers.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -201,24 +220,86 @@
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 text-center">
                     <svg class="img-fluid rounded shadow" width="450" height="300" viewBox="0 0 450 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="450" height="300" rx="8" fill="#ff5722" opacity="0.1"/>
-                        <!-- Drawing Tablet Screen -->
-                        <rect x="50" y="40" width="350" height="220" rx="10" fill="#0f172a" stroke="#334155" stroke-width="6"/>
-                        <!-- Screen Stylus Sketch line -->
-                        <path d="M90 180 C130 110, 200 90, 260 160 C290 190, 320 180, 340 140" stroke="#5c3ab6" stroke-width="6" fill="none" stroke-linecap="round"/>
-                        <!-- Grid Matrix on Tablet Screen -->
-                        <line x1="80" y1="50" x2="80" y2="250" stroke="#1e293b" stroke-width="1"/>
-                        <line x1="160" y1="50" x2="160" y2="250" stroke="#1e293b" stroke-width="1"/>
-                        <line x1="240" y1="50" x2="240" y2="250" stroke="#1e293b" stroke-width="1"/>
-                        <line x1="320" y1="50" x2="320" y2="250" stroke="#1e293b" stroke-width="1"/>
-                        <line x1="50" y1="100" x2="400" y2="100" stroke="#1e293b" stroke-width="1"/>
-                        <line x1="50" y1="160" x2="400" y2="160" stroke="#1e293b" stroke-width="1"/>
-                        <!-- Active Cursor crosshair -->
-                        <circle cx="260" cy="160" r="10" stroke="#ff5722" stroke-width="2" fill="none"/>
-                        <!-- Digital Pen Stylus -->
-                        <path d="M260 160 L310 110 L320 120 L270 170 Z" fill="#475569"/>
-                        <polygon points="260,160 263,167 270,170 260,160" fill="#ff5722"/>
-                        <rect x="305" y="105" width="20" height="10" rx="2" fill="#ff5722" transform="rotate(-45 305 105)"/>
+                        <defs>
+                            <linearGradient id="screen-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#0f172a" />
+                                <stop offset="100%" stop-color="#1e293b" />
+                            </linearGradient>
+                            <linearGradient id="stylus-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#64748b" />
+                                <stop offset="100%" stop-color="#334155" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Desk Backdrop -->
+                        <rect width="450" height="300" rx="12" fill="#5c3ab6" opacity="0.06"/>
+                        
+                        <!-- Color Palette dots on the desk -->
+                        <circle cx="45" cy="50" r="8" fill="#ff5722" opacity="0.8"/>
+                        <circle cx="45" cy="70" r="8" fill="#f59e0b" opacity="0.8"/>
+                        <circle cx="45" cy="90" r="8" fill="#10b981" opacity="0.8"/>
+                        <circle cx="45" cy="110" r="8" fill="#3b82f6" opacity="0.8"/>
+                        
+                        <!-- Laptop/Monitor Stand -->
+                        <path d="M 200 230 L 250 230 L 240 280 L 210 280 Z" fill="#475569" opacity="0.8"/>
+                        <ellipse cx="225" cy="280" rx="40" ry="8" fill="#334155"/>
+                        
+                        <!-- Drawing Monitor Frame (Bezel) -->
+                        <rect x="60" y="30" width="330" height="210" rx="10" fill="#0f172a" stroke="#475569" stroke-width="8"/>
+                        
+                        <!-- Screen Display Canvas -->
+                        <rect x="70" y="40" width="310" height="190" fill="url(#screen-grad)"/>
+                        
+                        <!-- Grid Lines / Drafting Matrix -->
+                        <g opacity="0.15">
+                            <line x1="70" y1="80" x2="380" y2="80" stroke="#cccccc" stroke-width="1"/>
+                            <line x1="70" y1="130" x2="380" y2="130" stroke="#cccccc" stroke-width="1"/>
+                            <line x1="70" y1="180" x2="380" y2="180" stroke="#cccccc" stroke-width="1"/>
+                            <line x1="130" y1="40" x2="130" y2="230" stroke="#cccccc" stroke-width="1"/>
+                            <line x1="200" y1="40" x2="200" y2="230" stroke="#cccccc" stroke-width="1"/>
+                            <line x1="270" y1="40" x2="270" y2="230" stroke="#cccccc" stroke-width="1"/>
+                            <line x1="340" y1="40" x2="340" y2="230" stroke="#cccccc" stroke-width="1"/>
+                        </g>
+
+                        <!-- Drawing Canvas UI Panels (Layer panel) -->
+                        <rect x="315" y="50" width="55" height="150" rx="3" fill="#1e293b" opacity="0.9"/>
+                        <rect x="320" y="55" width="45" height="12" rx="2" fill="#5c3ab6" opacity="0.4"/>
+                        <rect x="320" y="75" width="45" height="8" rx="1" fill="#475569"/>
+                        <rect x="320" y="90" width="45" height="8" rx="1" fill="#475569"/>
+                        <rect x="320" y="105" width="45" height="8" rx="1" fill="#475569"/>
+                        
+                        <!-- Tools palette on left -->
+                        <rect x="80" y="50" width="24" height="120" rx="3" fill="#1e293b" opacity="0.9"/>
+                        <circle cx="92" cy="62" r="5" fill="#ff5722"/>
+                        <rect x="86" y="76" width="12" height="6" rx="1" fill="#475569"/>
+                        <rect x="86" y="88" width="12" height="6" rx="1" fill="#475569"/>
+                        <rect x="86" y="100" width="12" height="6" rx="1" fill="#5c3ab6"/>
+                        
+                        <!-- Illustration being drawn (Cute Comic Character/Sketch) -->
+                        <!-- Face -->
+                        <circle cx="210" cy="120" r="32" stroke="#5c3ab6" stroke-width="3" fill="none" opacity="0.8"/>
+                        <!-- Hair -->
+                        <path d="M 180 115 C 190 90, 230 90, 240 115 C 245 105, 235 95, 210 95 C 185 95, 175 105, 180 115 Z" fill="#5c3ab6" opacity="0.8"/>
+                        <!-- Eyes -->
+                        <circle cx="198" cy="118" r="3.5" fill="#ff5722"/>
+                        <circle cx="222" cy="118" r="3.5" fill="#ff5722"/>
+                        <!-- Smile -->
+                        <path d="M 204 130 Q 210 136 216 130" stroke="#ff5722" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        
+                        <!-- Drawing Line with Stylus Contact Point -->
+                        <path d="M 210 152 Q 220 185 240 170" stroke="#ff5722" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+                        <circle cx="240" cy="170" r="6" stroke="#ff5722" stroke-width="2" fill="#ffffff"/>
+                        
+                        <!-- Stylus / Digital Drawing Pen -->
+                        <g transform="translate(240, 170) rotate(-40)">
+                            <!-- Tip -->
+                            <polygon points="0,0 -5,-15 5,-15" fill="#ff5722" />
+                            <!-- Body -->
+                            <rect x="-4" y="-70" width="8" height="55" rx="1" fill="url(#stylus-grad)" />
+                            <!-- Button/details -->
+                            <rect x="-2" y="-45" width="4" height="12" fill="#ff5722" />
+                            <!-- Eraser top -->
+                            <rect x="-4" y="-76" width="8" height="6" rx="2" fill="#ff5722" />
+                        </g>
                     </svg>
                 </div>
                 <div class="col-lg-6 text-start">

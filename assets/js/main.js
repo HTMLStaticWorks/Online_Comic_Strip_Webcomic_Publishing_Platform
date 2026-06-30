@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Theme Switcher Logic
+    // 1. Initialize Theme (runs on every page)
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    if (currentTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
+
+    // Theme Switcher Buttons (only if present)
     const themeToggleBtns = document.querySelectorAll('#theme-toggle, #theme-toggle-mobile');
     if (themeToggleBtns.length > 0) {
-        // Initialize theme
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        if (currentTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-        }
-        
         const updateThemeUI = (isDark) => {
             themeToggleBtns.forEach(btn => {
                 btn.innerHTML = isDark 
@@ -30,28 +30,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // RTL Toggle Logic
+    // 2. Initialize RTL Direction & Logo paths (runs on every page)
+    const currentDirection = localStorage.getItem('dir') || 'ltr';
+    const bootstrapStyle = document.getElementById('bootstrap-css');
+    
+    const updateLogo = (isRTL) => {
+        const logos = document.querySelectorAll('.logo-img');
+        logos.forEach(logo => {
+            logo.src = isRTL ? 'assets/images/logo-rtl.svg' : 'assets/images/logo.svg';
+        });
+    };
+
+    if (currentDirection === 'rtl') {
+        document.documentElement.setAttribute('dir', 'rtl');
+        if (bootstrapStyle) {
+            bootstrapStyle.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css";
+        }
+        updateLogo(true);
+    } else {
+        document.documentElement.setAttribute('dir', 'ltr');
+        if (bootstrapStyle) {
+            bootstrapStyle.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css";
+        }
+        updateLogo(false);
+    }
+
+    // RTL Toggle Button (only if present)
     const rtlToggleBtn = document.getElementById('rtl-toggle');
     if (rtlToggleBtn) {
-        // Initialize RTL state
-        const currentDirection = localStorage.getItem('dir') || 'ltr';
-        if (currentDirection === 'rtl') {
-            document.documentElement.setAttribute('dir', 'rtl');
-            rtlToggleBtn.innerHTML = '<i class="bi bi-translate"></i>';
-        } else {
-            document.documentElement.setAttribute('dir', 'ltr');
-            rtlToggleBtn.innerHTML = '<i class="bi bi-translate"></i>';
-        }
-
+        rtlToggleBtn.innerHTML = '<i class="bi bi-translate"></i>';
         rtlToggleBtn.addEventListener('click', () => {
             const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
             const newDir = isRTL ? 'ltr' : 'rtl';
             document.documentElement.setAttribute('dir', newDir);
             localStorage.setItem('dir', newDir);
-            rtlToggleBtn.innerHTML = '<i class="bi bi-translate"></i>';
+            updateLogo(newDir === 'rtl');
             
             // Adjust bootstrap styles dynamically if needed
-            const bootstrapStyle = document.getElementById('bootstrap-css');
             if (bootstrapStyle) {
                 if (newDir === 'rtl') {
                     bootstrapStyle.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css";
