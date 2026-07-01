@@ -226,6 +226,12 @@ strong, b, .bold-inline {
     border-color: var(--primary-color);
 }
 
+#rtl-toggle, #rtl-toggle-mobile {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
 /* Card Styling Rules */
 .comic-card {
     background-color: var(--bg-card);
@@ -406,6 +412,16 @@ section.alt-bg {
 .hero-content .h1-title,
 .hero-content .h2-title {
     color: #ffffff !important;
+}
+
+.hero-section .hero-content h1,
+.hero-section .hero-content .h1-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem) !important;
+}
+
+.hero-section .hero-content p,
+.hero-section .hero-content .body-text {
+    font-size: clamp(1.25rem, 2vw, 1.55rem) !important;
 }
 
 /* Footer Section */
@@ -716,9 +732,9 @@ html[dir="rtl"] .logo-img {
 }
 
 /* Auth Pages Floating Controls Alignment for Mobile viewports */
-@media (max-width: 576px) {
+@media (max-width: 767px) {
     .floating-controls {
-        position: fixed !important;
+        position: absolute !important;
         top: 15px !important;
         right: 15px !important;
     }

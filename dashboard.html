@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="assets/css/dark-mode.css">
     <link rel="stylesheet" href="assets/css/rtl.css">
     <style>
+        body {
+            overflow: hidden !important;
+        }
         .dashboard-layout {
             display: flex;
             min-height: 100vh;
@@ -32,12 +35,15 @@
             border-right: 1px solid var(--border-color);
             transition: all var(--transition-speed);
             flex-shrink: 0;
+            padding-top: 0.5rem !important;
         }
         .dashboard-content {
             flex-grow: 1;
-            padding: 2.5rem;
+            padding: 0 2.5rem 2.5rem 2.5rem;
             background-color: var(--bg-body);
             min-width: 0;
+            height: 100vh;
+            overflow-y: auto;
             overflow-x: hidden;
         }
         .dashboard-section {
@@ -85,34 +91,42 @@
             top: 0;
             z-index: 100;
             background-color: var(--bg-body);
-            padding-top: 2.5rem;
-            padding-bottom: 1rem;
-            margin-top: -2.5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.75rem;
+            margin-top: 0;
             margin-left: -2.5rem;
             margin-right: -2.5rem;
             padding-left: 2.5rem;
             padding-right: 2.5rem;
             transition: background-color var(--transition-speed);
+            height: auto;
         }
         @media (max-width: 1199px) {
             aside.dashboard-sidebar {
                 display: none;
             }
+            .dashboard-header-sticky {
+                padding-top: 0.5rem !important;
+                padding-bottom: 0.75rem !important;
+                height: auto !important;
+            }
         }
         @media (max-width: 767px) {
             .dashboard-content {
-                padding: 1rem !important;
+                padding: 0 1rem 1rem 1rem !important;
             }
             .dashboard-content .p-4 {
                 padding: 1rem !important;
             }
             .dashboard-header-sticky {
-                margin-top: -1rem !important;
+                margin-top: 0 !important;
                 margin-left: -1rem !important;
                 margin-right: -1rem !important;
                 padding-left: 1rem !important;
                 padding-right: 1rem !important;
-                padding-top: 1rem !important;
+                padding-top: 0.5rem !important;
+                padding-bottom: 0.75rem !important;
+                height: auto !important;
             }
         }
     </style>
@@ -125,12 +139,12 @@
         <!-- Sidebar Navigation (Desktop only) -->
         <aside class="dashboard-sidebar d-none d-xl-flex flex-column p-4 justify-content-between">
             <div>
-                <div class="mb-4 text-center">
-                    <a href="home-1.html">
+                <div class="mb-4 text-start ps-3" style="height: 50px; display: flex; align-items: center;">
+                    <a href="home-1.html" class="d-flex align-items-center">
                         <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
                     </a>
                 </div>
-                <div class="list-group list-group-flush">
+                <div class="list-group list-group-flush" style="margin-top: 1.5rem;">
                     <a href="#" class="list-group-item list-group-item-action py-3 border-0 bg-transparent text-main active" data-section="analytics">
                         <i class="bi bi-graph-up-arrow me-3"></i> Analytics
                     </a>
@@ -148,7 +162,7 @@
             <div class="w-100">
                 <hr style="border-color: var(--border-color);">
                 <div class="d-flex justify-content-center gap-2 mb-3">
-                    <button class="control-btn" id="rtl-toggle" aria-label="Toggle Direction"><i class="bi bi-translate"></i></button>
+                    <button class="control-btn" id="rtl-toggle" aria-label="Toggle Direction">RTL</button>
                     <button class="control-btn" id="theme-toggle" aria-label="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
                 </div>
                 <div class="d-flex flex-column gap-2">
@@ -161,13 +175,15 @@
         <div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="dashboardSidebarOffcanvas" aria-labelledby="offcanvasSidebarLabel">
             <div class="offcanvas-header border-bottom">
                 <div class="d-flex align-items-center gap-3">
-                    <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
+                    <a href="home-1.html" class="d-flex align-items-center">
+                        <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
+                    </a>
                     <img src="assets/images/creator_alex.png" alt="Alex Rivera Profile" width="36" height="36" class="rounded-circle border" style="object-fit: cover; border-color: var(--border-color) !important;">
                 </div>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body d-flex flex-column justify-content-between">
-                <div class="list-group list-group-flush dashboard-sidebar w-100 bg-transparent border-0">
+                <div class="list-group list-group-flush w-100 bg-transparent border-0">
                     <a href="#" class="list-group-item list-group-item-action py-3 border-0 bg-transparent text-main active" data-section="analytics">
                         <i class="bi bi-graph-up-arrow me-3"></i> Analytics
                     </a>
@@ -184,7 +200,7 @@
                 <div class="w-100">
                     <hr style="border-color: var(--border-color);">
                     <div class="d-flex justify-content-center gap-2 mb-3">
-                        <button class="control-btn" id="rtl-toggle-mobile"><i class="bi bi-translate"></i></button>
+                        <button class="control-btn" id="rtl-toggle-mobile">RTL</button>
                         <button class="control-btn" id="theme-toggle-mobile"><i class="bi bi-moon-fill"></i></button>
                     </div>
                     <div class="d-flex flex-column gap-2">

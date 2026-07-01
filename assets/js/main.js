@@ -57,8 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // RTL Toggle Buttons (only if present)
     const rtlToggleBtns = document.querySelectorAll('#rtl-toggle, #rtl-toggle-mobile');
+    const updateRtlButtonUI = (isRTL) => {
+        rtlToggleBtns.forEach(btn => {
+            btn.textContent = isRTL ? 'LTR' : 'RTL';
+        });
+    };
+
+    updateRtlButtonUI(currentDirection === 'rtl');
+
     rtlToggleBtns.forEach(btn =>{
-        btn.innerHTML = '<i class="bi bi-translate"></i>';
         btn.addEventListener('click', (e) => {
             e.stopImmediatePropagation();
             const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
@@ -66,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.documentElement.setAttribute('dir', newDir);
             localStorage.setItem('dir', newDir);
             updateLogo(newDir === 'rtl');
+            updateRtlButtonUI(newDir === 'rtl');
 
             // Adjust bootstrap styles dynamically if needed
             if (bootstrapStyle) {
