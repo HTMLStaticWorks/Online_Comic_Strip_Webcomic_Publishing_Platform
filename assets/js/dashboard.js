@@ -11,8 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Remove active class from all links
             sidebarLinks.forEach(l => l.classList.remove('active'));
-            // Add active class to clicked link
-            link.classList.add('active');
+            // Add active class to all matching links (sync desktop and mobile)
+            document.querySelectorAll(`.dashboard-sidebar .list-group-item[data-section="${targetId}"]`).forEach(l => {
+                l.classList.add('active');
+            });
 
             // Hide all sections
             sections.forEach(sec => sec.classList.remove('active'));

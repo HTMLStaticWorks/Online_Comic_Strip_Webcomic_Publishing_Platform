@@ -75,8 +75,8 @@
             </ul>
             <div class="d-flex flex-column gap-2 mt-4">
                 <div class="d-flex justify-content-center gap-2">
-                    <button class="control-btn" id="rtl-toggle-mobile" onclick="document.getElementById('rtl-toggle').click()"><i class="bi bi-translate"></i></button>
-                    <button class="control-btn" id="theme-toggle-mobile" onclick="document.getElementById('theme-toggle').click()"><i class="bi bi-moon-fill"></i></button>
+                    <button class="control-btn" id="rtl-toggle-mobile"><i class="bi bi-translate"></i></button>
+                    <button class="control-btn" id="theme-toggle-mobile"><i class="bi bi-moon-fill"></i></button>
                 </div>
                 <a href="login.html" class="btn-custom btn-outline-custom w-100">Login</a>
 
@@ -87,7 +87,7 @@
     <!-- MAIN SECTIONS -->
 
     <!-- Section 1: Hero Section -->
-    <section class="hero-section mt-5 text-center" style="background-image: linear-gradient(180deg, rgba(15,23,42,0.85) 0%, rgba(92,58,182,0.85) 100%), url('assets/images/hero-home1.svg');">
+    <section class="hero-section mt-5 text-center" style="background-image: linear-gradient(180deg, rgba(15,23,42,0.60) 0%, rgba(92,58,182,0.55) 100%), url('assets/images/hero-home1-bg.png'); min-height: 500px;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 hero-content text-white py-5">
@@ -109,26 +109,26 @@
                 <h2 class="h2-title">Trending Comic Strips</h2>
                 <p class="body-text">Follow the weekly stories getting highest engagement rates across the platform.</p>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
                     <div class="comic-card">
-                        <img src="assets/images/nebula_cover.png" alt="Tales of Nebula Cover Art" class="comic-card-img">
+                        <img src="assets/images/nebula_cover.png" alt="Tales of Nebula Cover Art" class="comic-card-img home1-tablet-img">
                         <h3 class="comic-card-title h3-title mt-3">Tales of Nebula</h3>
                         <p class="comic-card-text body-text">An epic space comedy about a lost astronaut and their sassy robot assistant traversing asteroid fields.</p>
                         <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Read Episode 1</a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="comic-card">
-                        <img src="assets/images/cyber_cover.png" alt="Cyber Junkies Cover Art" class="comic-card-img">
+                        <img src="assets/images/cyber_cover.png" alt="Cyber Junkies Cover Art" class="comic-card-img home1-tablet-img">
                         <h3 class="comic-card-title h3-title mt-3">Cyber Junkies</h3>
                         <p class="comic-card-text body-text">Chasing neon signs and debugging cybernetic enhancements in a dystopian high-tech retro-future metropolis.</p>
                         <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Read Episode 1</a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="comic-card">
-                        <img src="assets/images/pixel_cover.png" alt="Pixel Adventures Cover Art" class="comic-card-img">
+                        <img src="assets/images/pixel_cover.png" alt="Pixel Adventures Cover Art" class="comic-card-img home1-tablet-img">
                         <h3 class="comic-card-title h3-title mt-3">Pixel Adventures</h3>
                         <p class="comic-card-text body-text">Classic retro gaming nostalgia packed inside daily three-panel comic strips. Lighthearted pixel humor.</p>
                         <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Read Episode 1</a>
@@ -424,48 +424,48 @@
                 <h2 class="h2-title">Weekly Reader Rankings</h2>
                 <p class="body-text">The highest rated independent comic series voted by active community members this week.</p>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
                     <div class="comic-card">
                         <div class="fs-1 fw-bold text-secondary mb-3">#1</div>
-                        <svg class="comic-card-img" width="100%" height="150" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="300" height="150" rx="5" fill="#5c3ab6" opacity="0.1"/>
+                        <svg class="comic-card-img" width="100%" height="250" viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="250" rx="5" fill="#5c3ab6" opacity="0.1"/>
                             <!-- Space Planet & Star -->
-                            <circle cx="150" cy="75" r="24" fill="#5c3ab6" opacity="0.3"/>
-                            <ellipse cx="150" cy="75" rx="36" ry="8" stroke="#5c3ab6" stroke-width="4" transform="rotate(-15 150 75)"/>
-                            <path d="M 185 50 L 188 56 L 194 57 L 189 61 L 191 67 L 185 64 L 179 67 L 181 61 L 176 57 L 182 56 Z" fill="#ff5722"/>
+                            <circle cx="150" cy="125" r="24" fill="#5c3ab6" opacity="0.3"/>
+                            <ellipse cx="150" cy="125" rx="36" ry="8" stroke="#5c3ab6" stroke-width="4" transform="rotate(-15 150 125)"/>
+                            <path d="M 185 100 L 188 106 L 194 107 L 189 111 L 191 117 L 185 114 L 179 117 L 181 111 L 176 107 L 182 106 Z" fill="#ff5722"/>
                         </svg>
                         <h3 class="comic-card-title h4-title mt-3">Tales of Nebula</h3>
                         <p class="comic-card-text body-text">Score: 9.8 / 10 (4,230 votes)</p>
                         <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Read Series</a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="comic-card">
                         <div class="fs-1 fw-bold text-muted mb-3">#2</div>
-                        <svg class="comic-card-img" width="100%" height="150" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="300" height="150" rx="5" fill="#ff5722" opacity="0.1"/>
+                        <svg class="comic-card-img" width="100%" height="250" viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="250" rx="5" fill="#ff5722" opacity="0.1"/>
                             <!-- Cyber Visor -->
-                            <path d="M 110 65 H 190 L 180 90 H 120 Z" fill="#ff5722" opacity="0.4"/>
-                            <path d="M 105 63 H 195 L 183 93 H 117 Z" stroke="#ff5722" stroke-width="2" fill="none"/>
-                            <line x1="125" y1="78" x2="175" y2="78" stroke="#ffffff" stroke-width="2"/>
+                            <path d="M 110 115 H 190 L 180 140 H 120 Z" fill="#ff5722" opacity="0.4"/>
+                            <path d="M 105 113 H 195 L 183 143 H 117 Z" stroke="#ff5722" stroke-width="2" fill="none"/>
+                            <line x1="125" y1="128" x2="175" y2="128" stroke="#ffffff" stroke-width="2"/>
                         </svg>
                         <h3 class="comic-card-title h4-title mt-3">Cyber Junkies</h3>
                         <p class="comic-card-text body-text">Score: 9.5 / 10 (3,890 votes)</p>
                         <a href="service-details.html" class="btn-custom btn-primary-custom comic-card-btn">Read Series</a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="comic-card">
                         <div class="fs-1 fw-bold text-muted mb-3">#3</div>
-                        <svg class="comic-card-img" width="100%" height="150" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="300" height="150" rx="5" fill="#10b981" opacity="0.1"/>
+                        <svg class="comic-card-img" width="100%" height="250" viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="250" rx="5" fill="#10b981" opacity="0.1"/>
                             <!-- Game Controller -->
-                            <rect x="110" y="55" width="80" height="40" rx="10" fill="#10b981" opacity="0.4"/>
-                            <rect x="110" y="55" width="80" height="40" rx="10" stroke="#10b981" stroke-width="3" fill="none"/>
-                            <path d="M 125 75 H 135 M 130 70 V 80" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
-                            <circle cx="165" cy="78" r="4" fill="#ff5722"/>
-                            <circle cx="177" cy="70" r="4" fill="#ff5722"/>
+                            <rect x="110" y="105" width="80" height="40" rx="10" fill="#10b981" opacity="0.4"/>
+                            <rect x="110" y="105" width="80" height="40" rx="10" stroke="#10b981" stroke-width="3" fill="none"/>
+                            <path d="M 125 125 H 135 M 130 120 V 130" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="165" cy="128" r="4" fill="#ff5722"/>
+                            <circle cx="177" cy="120" r="4" fill="#ff5722"/>
                         </svg>
                         <h3 class="comic-card-title h4-title mt-3">Pixel Adventures</h3>
                         <p class="comic-card-text body-text">Score: 9.2 / 10 (3,120 votes)</p>
@@ -485,17 +485,17 @@
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-3">
-                    <div class="p-3 border rounded bg-card h-100 d-flex align-items-center justify-content-center text-center" style="border-color: var(--border-color) !important;">
+                    <div class="syndicate-card">
                         <h4 class="h5-title m-0">IndiePress Network</h4>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="p-3 border rounded bg-card h-100 d-flex align-items-center justify-content-center text-center" style="border-color: var(--border-color) !important;">
+                    <div class="syndicate-card">
                         <h4 class="h5-title m-0">Global Webtoon League</h4>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="p-3 border rounded bg-card h-100 d-flex align-items-center justify-content-center text-center" style="border-color: var(--border-color) !important;">
+                    <div class="syndicate-card">
                         <h4 class="h5-title m-0">Manga Artist Guild</h4>
                     </div>
                 </div>

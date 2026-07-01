@@ -55,17 +55,18 @@ document.addEventListener('DOMContentLoaded', () => {
         updateLogo(false);
     }
 
-    // RTL Toggle Button (only if present)
-    const rtlToggleBtn = document.getElementById('rtl-toggle');
-    if (rtlToggleBtn) {
-        rtlToggleBtn.innerHTML = '<i class="bi bi-translate"></i>';
-        rtlToggleBtn.addEventListener('click', () => {
+    // RTL Toggle Buttons (only if present)
+    const rtlToggleBtns = document.querySelectorAll('#rtl-toggle, #rtl-toggle-mobile');
+    rtlToggleBtns.forEach(btn =>{
+        btn.innerHTML = '<i class="bi bi-translate"></i>';
+        btn.addEventListener('click', (e) => {
+            e.stopImmediatePropagation();
             const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
             const newDir = isRTL ? 'ltr' : 'rtl';
             document.documentElement.setAttribute('dir', newDir);
             localStorage.setItem('dir', newDir);
             updateLogo(newDir === 'rtl');
-            
+
             // Adjust bootstrap styles dynamically if needed
             if (bootstrapStyle) {
                 if (newDir === 'rtl') {
@@ -75,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
-    }
+    });
 
     // Active Navigation Highlight
     const currentPath = window.location.pathname.split('/').pop() || 'home-1.html';
@@ -139,5 +140,21 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Subscribed successfully!');
             form.reset();
         });
+    });
+
+    // Auto-close offcanvas menus on resize to desktop view (prevent layout bugs)
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 1200) {
+            ['mobileNav', 'dashboardSidebarOffcanvas'].forEach(id => {
+                const offcanvasEl = document.getElementById(id);
+                if (offcanvasEl && offcanvasEl.classList.contains('show')) {
+                    let bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                    if (!bsOffcanvas) {
+                        bsOffcanvas = new bootstrap.Offcanvas(offcanvasEl);
+                    }
+                    bsOffcanvas.hide();
+                }
+            });
+        }
     });
 });

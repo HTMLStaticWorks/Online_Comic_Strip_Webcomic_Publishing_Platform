@@ -117,6 +117,22 @@ body.dark-mode footer .newsletter-form input::placeholder {
     opacity: 1 !important;
 }
 
+/* Dark mode: restore white colors for text-white / text-white-50 in footer */
+body.dark-mode footer .text-white,
+body.dark-mode footer h4.text-white,
+body.dark-mode footer h5.text-white,
+body.dark-mode footer .h5-title.text-white {
+    color: #ffffff !important;
+}
+
+body.dark-mode footer .text-white-50,
+body.dark-mode footer p.text-white-50,
+body.dark-mode footer a.text-white-50,
+body.dark-mode footer .caption-text.text-white-50 {
+    color: rgba(255, 255, 255, 0.6) !important;
+    opacity: 1 !important;
+}
+
 /* Dark Mode Accordion Buttons and Chevrons */
 body.dark-mode .accordion-button {
     background-color: var(--bg-card) !important;
@@ -147,6 +163,18 @@ body.dark-mode .table td {
 body.dark-mode .table tbody tr {
     background-color: transparent !important;
 }
+
+/* Dark Mode — Bootstrap close button (X) visibility fix
+   btn-close uses a dark SVG by default; invert it to white in dark mode */
+body.dark-mode .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%) !important;
+    opacity: 0.85 !important;
+}
+
+body.dark-mode .btn-close:hover {
+    opacity: 1 !important;
+}
+
 
 
 

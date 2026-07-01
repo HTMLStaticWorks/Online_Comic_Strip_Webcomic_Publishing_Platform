@@ -75,8 +75,8 @@
             </ul>
             <div class="d-flex flex-column gap-2 mt-4">
                 <div class="d-flex justify-content-center gap-2">
-                    <button class="control-btn" id="rtl-toggle-mobile" onclick="document.getElementById('rtl-toggle').click()"><i class="bi bi-translate"></i></button>
-                    <button class="control-btn" id="theme-toggle-mobile" onclick="document.getElementById('theme-toggle').click()"><i class="bi bi-moon-fill"></i></button>
+                    <button class="control-btn" id="rtl-toggle-mobile"><i class="bi bi-translate"></i></button>
+                    <button class="control-btn" id="theme-toggle-mobile"><i class="bi bi-moon-fill"></i></button>
                 </div>
                 <a href="login.html" class="btn-custom btn-outline-custom w-100">Login</a>
 
@@ -87,7 +87,7 @@
     <!-- MAIN SECTIONS -->
 
     <!-- Section 1: Hero Section -->
-    <section class="hero-section text-center mt-5" style="background-image: linear-gradient(180deg, rgba(15,23,42,0.85) 0%, rgba(92,58,182,0.85) 100%), url('assets/images/hero-home2.svg');">
+    <section class="hero-section text-center mt-5" style="background-image: linear-gradient(180deg, rgba(15,23,42,0.60) 0%, rgba(92,58,182,0.55) 100%), url('assets/images/hero-home2-bg.png'); min-height: 500px;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 hero-content text-white py-5">
@@ -194,29 +194,29 @@
                 <h2 class="h2-title">Popular Comic Genres</h2>
                 <p class="body-text">Browse webcomics grouped by your favorite narrative themes and illustration styles.</p>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="comic-card">
-                        <img src="assets/images/genre_scifi.png" alt="Space Sci-Fi Genre Illustration" class="comic-card-img">
-                        <h3 class="comic-card-title h3-title mt-3">Space Sci-Fi</h3>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="comic-card h-100 d-flex flex-column">
+                        <img src="assets/images/genre_scifi.png" alt="Space Sci-Fi Genre Illustration" class="comic-card-img home1-tablet-img">
+                        <h3 class="comic-card-title h3-title mt-3">Space <span class="text-nowrap">Sci-Fi</span></h3>
                         <p class="comic-card-text body-text">Action-packed asteroid chases, alien colonies, and funny assistant robots.</p>
-                        <a href="gallery.html" class="btn-custom btn-secondary-custom comic-card-btn">Explore Genre</a>
+                        <a href="gallery.html" class="btn-custom btn-secondary-custom comic-card-btn mt-auto">Explore Genre</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="comic-card">
-                        <img src="assets/images/genre_cyberpunk.png" alt="Cyberpunk Genre Illustration" class="comic-card-img">
+                <div class="col-md-6 col-lg-4">
+                    <div class="comic-card h-100 d-flex flex-column">
+                        <img src="assets/images/genre_cyberpunk.png" alt="Cyberpunk Genre Illustration" class="comic-card-img home1-tablet-img">
                         <h3 class="comic-card-title h3-title mt-3">Cyberpunk</h3>
                         <p class="comic-card-text body-text">Dystopian high-tech cities, neon glow sign boards, and netrunner hacks.</p>
-                        <a href="gallery.html" class="btn-custom btn-secondary-custom comic-card-btn">Explore Genre</a>
+                        <a href="gallery.html" class="btn-custom btn-secondary-custom comic-card-btn mt-auto">Explore Genre</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="comic-card">
-                        <img src="assets/images/genre_sliceoflife.png" alt="Slice of Life Genre Illustration" class="comic-card-img">
+                <div class="col-md-6 col-lg-4">
+                    <div class="comic-card h-100 d-flex flex-column">
+                        <img src="assets/images/genre_sliceoflife.png" alt="Slice of Life Genre Illustration" class="comic-card-img home1-tablet-img">
                         <h3 class="comic-card-title h3-title mt-3">Slice of Life</h3>
                         <p class="comic-card-text body-text">Heartwarming daily anecdotes, cozy coffee chats, and pet comedies.</p>
-                        <a href="gallery.html" class="btn-custom btn-secondary-custom comic-card-btn">Explore Genre</a>
+                        <a href="gallery.html" class="btn-custom btn-secondary-custom comic-card-btn mt-auto">Explore Genre</a>
                     </div>
                 </div>
             </div>

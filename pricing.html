@@ -75,8 +75,8 @@
             </ul>
             <div class="d-flex flex-column gap-2 mt-4">
                 <div class="d-flex justify-content-center gap-2">
-                    <button class="control-btn" id="rtl-toggle-mobile" onclick="document.getElementById('rtl-toggle').click()"><i class="bi bi-translate"></i></button>
-                    <button class="control-btn" id="theme-toggle-mobile" onclick="document.getElementById('theme-toggle').click()"><i class="bi bi-moon-fill"></i></button>
+                    <button class="control-btn" id="rtl-toggle-mobile"><i class="bi bi-translate"></i></button>
+                    <button class="control-btn" id="theme-toggle-mobile"><i class="bi bi-moon-fill"></i></button>
                 </div>
                 <a href="login.html" class="btn-custom btn-outline-custom w-100">Login</a>
 
@@ -101,14 +101,14 @@
                 <!-- Card 1: Basic Plan -->
                 <div class="col-md-6 col-lg-4">
                     <div class="comic-card py-5">
-                        <span class="badge bg-secondary mb-3" style="background-color: var(--secondary-color) !important;">Free Reader</span>
+                        <span class="badge bg-secondary pricing-badge mb-3" style="background-color: var(--secondary-color) !important;">Free Reader</span>
                         <h3 class="comic-card-title h3-title">$0 <span class="fs-6 text-muted">/ forever</span></h3>
                         <p class="body-text mt-2">Perfect for reading all daily public comic strips.</p>
                         <hr class="w-75 my-4" style="border-color: var(--border-color);">
-                        <ul class="list-unstyled d-flex flex-column align-items-center gap-2 mb-4">
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Access public episodes</li>
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Follow up to 5 creators</li>
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Ad-supported layout</li>
+                        <ul class="list-unstyled d-flex flex-column align-items-start gap-2 mb-4 w-100 px-3">
+                            <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i><span>Access public episodes</span></li>
+                            <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i><span>Follow up to 5 creators</span></li>
+                            <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i><span>Ad-supported layout</span></li>
                         </ul>
                         <a href="register.html" class="btn-custom btn-secondary-custom comic-card-btn">Get Started</a>
                     </div>
@@ -117,15 +117,15 @@
                 <!-- Card 2: Creator Plan (POPULAR) - Primary Button -->
                 <div class="col-md-6 col-lg-4">
                     <div class="comic-card py-5 border-2 border-primary" style="box-shadow: 0 15px 30px rgba(92, 58, 182, 0.1);">
-                        <span class="badge bg-primary mb-3" style="background-color: var(--primary-color) !important;">Creator Pro</span>
+                        <span class="badge bg-primary pricing-badge mb-3" style="background-color: var(--primary-color) !important;">Creator Pro</span>
                         <h3 class="comic-card-title h3-title">$9 <span class="fs-6 text-muted">/ month</span></h3>
                         <p class="body-text mt-2">Most popular plan for independent digital artists.</p>
                         <hr class="w-75 my-4" style="border-color: var(--border-color);">
-                        <ul class="list-unstyled d-flex flex-column align-items-center gap-2 mb-4">
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Infinite public/private uploads</li>
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Dynamic subscriber billing</li>
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Custom CSS styling templates</li>
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> 100% Ad-free for readers</li>
+                        <ul class="list-unstyled d-flex flex-column align-items-start gap-2 mb-4 w-100 px-3">
+                            <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i><span>Infinite public/private uploads</span></li>
+                            <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i><span>Dynamic subscriber billing</span></li>
+                            <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i><span>Custom CSS styling templates</span></li>
+                            <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i><span>100% Ad-free for readers</span></li>
                         </ul>
                         <a href="register.html" class="btn-custom btn-primary-custom comic-card-btn">Launch Creator Pro</a>
                     </div>
@@ -134,15 +134,15 @@
                 <!-- Card 3: Publisher Plan -->
                 <div class="col-md-6 col-lg-4">
                     <div class="comic-card py-5">
-                        <span class="badge bg-secondary mb-3" style="background-color: var(--secondary-color) !important;">Studio Team</span>
+                        <span class="badge bg-secondary pricing-badge mb-3" style="background-color: var(--secondary-color) !important;">Studio Team</span>
                         <h3 class="comic-card-title h3-title">$29 <span class="fs-6 text-muted">/ month</span></h3>
                         <p class="body-text mt-2">For comic collectives and indie publishing houses.</p>
                         <hr class="w-75 my-4" style="border-color: var(--border-color);">
-                        <ul class="list-unstyled d-flex flex-column align-items-center gap-2 mb-4">
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> All features of Creator Pro</li>
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Multi-author workspace support</li>
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Print-on-demand API conversion</li>
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Priority tech ticketing</li>
+                        <ul class="list-unstyled d-flex flex-column align-items-start gap-2 mb-4 w-100 px-3">
+                            <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i><span>All features of Creator Pro</span></li>
+                            <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i><span>Multi-author workspace support</span></li>
+                            <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i><span>Print-on-demand API conversion</span></li>
+                            <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-primary flex-shrink-0 mt-1"></i><span>Priority tech ticketing</span></li>
                         </ul>
                         <a href="register.html" class="btn-custom btn-secondary-custom comic-card-btn">Get Started</a>
                     </div>
