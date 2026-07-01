@@ -422,6 +422,7 @@ section.alt-bg {
 .hero-section .hero-content p,
 .hero-section .hero-content .body-text {
     font-size: clamp(1.25rem, 2vw, 1.55rem) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
 }
 
 /* Footer Section */
