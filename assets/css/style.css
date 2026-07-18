@@ -149,6 +149,18 @@ p, .body-text {
     color: var(--primary-color) !important;
 }
 
+.hero-section .btn-secondary-custom,
+.hero-content .btn-secondary-custom {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.hero-section .btn-secondary-custom:hover,
+.hero-content .btn-secondary-custom:hover {
+    background-color: #ffffff !important;
+    color: var(--primary-color) !important;
+}
+
 /* Nav links / Label */
 .nav-link, label {
     font-size: clamp(0.9rem, 1.5vw, 1.2rem) !important;
