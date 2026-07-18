@@ -161,10 +161,7 @@
             </div>
             <div class="w-100">
                 <hr style="border-color: var(--border-color);">
-                <div class="d-flex justify-content-center gap-2 mb-3">
-                    <button class="control-btn" id="rtl-toggle" aria-label="Toggle Direction">RTL</button>
-                    <button class="control-btn" id="theme-toggle" aria-label="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
-                </div>
+                <!-- Toggles moved to header -->
                 <div class="d-flex flex-column gap-2">
                     <a href="login.html" class="btn-custom btn-outline-custom w-100"><i class="bi bi-box-arrow-right"></i> Logout</a>
                 </div>
@@ -178,7 +175,6 @@
                     <a href="home-1.html" class="d-flex align-items-center">
                         <img src="assets/images/logo.svg" alt="ComicVerse Logo" class="logo-img">
                     </a>
-                    <img src="assets/images/creator_alex.png" alt="Alex Rivera Profile" width="36" height="36" class="rounded-circle border" style="object-fit: cover; border-color: var(--border-color) !important;">
                 </div>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -199,10 +195,7 @@
                 </div>
                 <div class="w-100">
                     <hr style="border-color: var(--border-color);">
-                    <div class="d-flex justify-content-center gap-2 mb-3">
-                        <button class="control-btn" id="rtl-toggle-mobile">RTL</button>
-                        <button class="control-btn" id="theme-toggle-mobile"><i class="bi bi-moon-fill"></i></button>
-                    </div>
+                    <!-- Toggles moved to header -->
                     <div class="d-flex flex-column gap-2">
                         <a href="login.html" class="btn-custom btn-outline-custom w-100"><i class="bi bi-box-arrow-right"></i> Logout</a>
                     </div>
@@ -215,18 +208,28 @@
             
             <!-- Top Dashboard Bar -->
             <div class="d-flex justify-content-between align-items-center mb-5 pb-3 border-bottom dashboard-header-sticky" style="border-color: var(--border-color) !important;">
-                <div class="d-flex align-items-center gap-3">
-                    <button class="btn btn-outline-secondary d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#dashboardSidebarOffcanvas">
+                <div class="d-flex align-items-center gap-2 gap-md-3">
+                    <button class="btn btn-outline-secondary d-xl-none px-2 py-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#dashboardSidebarOffcanvas">
                         <i class="bi bi-list fs-4"></i>
                     </button>
                     <div>
-                        <h2 class="h4-title m-0">Welcome back, <strong class="text-main">Alex Rivera</strong></h2>
+                        <!-- Mobile View: Smaller font, 2 lines, no-wrap -->
+                        <div class="d-md-none text-nowrap" style="font-size: 13px; line-height: 1.2;">
+                            Welcome back,<br><strong class="text-main" style="font-size: 14px;">Alex Rivera</strong>
+                        </div>
+                        <!-- Desktop View: Normal font, 1 line -->
+                        <h2 class="h4-title m-0 d-none d-md-block">Welcome back, <strong class="text-main">Alex Rivera</strong></h2>
                     </div>
                 </div>
-                <div class="d-none d-xl-flex align-items-center gap-3">
+                <div class="d-flex align-items-center gap-2 gap-md-3">
+                    <!-- Toggles -->
+                    <div class="d-flex align-items-center gap-1 gap-md-2">
+                        <button class="control-btn px-2" id="rtl-toggle" aria-label="Toggle Direction">RTL</button>
+                        <button class="control-btn px-2" id="theme-toggle" aria-label="Toggle Theme"><i class="bi bi-moon-fill"></i></button>
+                    </div>
                     <!-- User Profile Icon -->
-                    <div class="d-flex align-items-center gap-2">
-                        <img src="assets/images/creator_alex.png" alt="Alex Rivera Profile" width="40" height="40" class="rounded-circle border" style="object-fit: cover; border-color: var(--border-color) !important;">
+                    <div class="d-flex align-items-center">
+                        <img src="assets/images/creator_alex.png" alt="Alex Rivera Profile" width="36" height="36" class="rounded-circle border" style="object-fit: cover; border-color: var(--border-color) !important;">
                     </div>
                 </div>
             </div>
